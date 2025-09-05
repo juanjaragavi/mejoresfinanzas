@@ -80,7 +80,32 @@ fi
 
 echo "Starting merge process..."
 
+# Helper: ensure a branch exists locally (and remotely). If not, create from a source branch.
+ensure_branch_exists() {
+  local TARGET_BRANCH="$1"
+  local FROM_BRANCH="$2"
+
+  # If local branch exists, nothing to do
+  if git show-ref --verify --quiet "refs/heads/${TARGET_BRANCH}"; then
+    echo "Branch '${TARGET_BRANCH}' exists locally."
+    return 0
+  fi
+
+  # If remote branch exists, create local tracking branch
+  if git ls-remote --exit-code --heads origin "${TARGET_BRANCH}" >/dev/null 2>&1; then
+    echo "Creating local '${TARGET_BRANCH}' from remote..."
+    git fetch origin "${TARGET_BRANCH}:${TARGET_BRANCH}"
+    return 0
+  fi
+
+  # Otherwise create from provided source branch and push
+  echo "Creating '${TARGET_BRANCH}' from '${FROM_BRANCH}' and pushing to origin..."
+  git branch "${TARGET_BRANCH}" "${FROM_BRANCH}"
+  git push -u origin "${TARGET_BRANCH}"
+}
+
 # 1. Update and merge into main branch
+ensure_branch_exists "$MAIN_BRANCH" "$DEV_BRANCH"
 echo "Switching to '$MAIN_BRANCH' branch..."
 git checkout "$MAIN_BRANCH"
 
@@ -94,6 +119,7 @@ echo "Pushing '$MAIN_BRANCH' to origin..."
 git push origin "$MAIN_BRANCH"
 
 # 2. Update and merge into backup branch
+ensure_branch_exists "$BACKUP_BRANCH" "$DEV_BRANCH"
 echo "Switching to '$BACKUP_BRANCH' branch..."
 git checkout "$BACKUP_BRANCH"
 
