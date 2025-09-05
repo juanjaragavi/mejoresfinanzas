@@ -1,0 +1,265 @@
+---
+import Base from "@/layouts/Base.astro";
+import Accordion from "@/layouts/shortcodes/Accordion.tsx";
+---
+
+<Base
+  title="Discover Your Ideal Credit Card"
+  meta_title="Credit Card Recommender - Find Your Perfect Match"
+  description="Finding the right credit card is simple with this site. Maximize rewards, organize your spending and enjoy exclusive benefits. Explore and choose the ideal card for you!"
+  image="/images/og-image.png"
+>
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="content">
+            <h1 class="h2 mb-4">Discover Your Ideal Credit Card</h1>
+
+            <!-- Autozep Ad: us_site_1 -->
+            <div
+              id="us_site_1"
+              class="min-w-auto flex justify-center items-center"
+            >
+            </div>
+
+            <p class="text-left text-lg text-dark">
+              Finding the right card is simple. Maximize rewards, organize your
+              spending and enjoy exclusive benefits. Explore and choose the
+              ideal card for you!
+            </p>
+
+            <!-- Primary CTA Button with Ad-Aware Positioning -->
+            <div>
+              <a
+                href="/financial-solutions/amazon-rewards-visa-credit-card-benefits"
+                class="btn btn-primary btn-lg primary-cta-mobile cta-accessible w-full sm:w-auto inline-flex items-center justify-center rounded-full"
+              >
+                <span>Accept Recommendation</span>
+                <span
+                  class="bg-white rounded-full w-5 h-5 flex items-center justify-center"
+                >
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6H11M11 6L6 1M11 6L6 11"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+              </a>
+            </div>
+
+            <h2 class="h3 mb-6">Why Choose Our Credit Card Recommender?</h2>
+
+            <!-- Feature highlights -->
+            <div class="space-y-3 mb-6">
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex-shrink-0 rounded-full w-6 h-6 flex items-center justify-center"
+                  style="background-color: #7ED321;"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="ml-2 font-semibold text-dark"
+                    >Personalized Options</span
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex-shrink-0 rounded-full w-6 h-6 flex items-center justify-center"
+                  style="background-color: #7ED321;"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="ml-2 font-semibold text-dark"
+                    >Completely Free</span
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex-shrink-0 rounded-full w-6 h-6 flex items-center justify-center"
+                  style="background-color: #7ED321;"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="ml-2 font-semibold text-dark">Expert Advice</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <p class="text-left mb-4">
+              Our recommendations are designed to connect your financial goals
+              with cards that suit your needs. From cashback to travel rewards,
+              we give you clear, easy-to-understand options so you can make
+              informed decisions.
+            </p>
+
+            <p class="text-left mb-6">
+              With our guide, you'll transform your credit card into a tool that
+              simplifies your finances and helps you achieve your goals without
+              complications.
+            </p>
+
+            <p class="mb-8">
+              <a
+                class="text-primary hover:underline"
+                href="/financial-solutions/capital-one-savor-rewards-credit-card-requirements"
+              >
+                Learn How to Apply for Credit Cards
+              </a>
+            </p>
+
+            <!-- FAQ Section -->
+            <div class="mt-8 mb-8">
+              <Accordion
+                title="What are the benefits of a card with no annual fee?"
+                client:load
+              >
+                <p class="text-left">
+                  A card with no annual fee helps you save on recurring costs
+                  while enjoying key benefits such as cashback or points for
+                  purchases. This means more money in your pocket to spend on
+                  what matters most.
+                </p>
+              </Accordion>
+
+              <Accordion title="How does cashback work?" client:load>
+                <p class="text-left">
+                  You receive a percentage of your purchases as cash that you
+                  can use to reduce balances, receive as statement credits, or
+                  in some cases, deposit directly into your bank account. It's
+                  essentially getting paid to spend.
+                </p>
+              </Accordion>
+
+              <Accordion
+                title="What's the best option for travelers?"
+                client:load
+              >
+                <p class="text-left">
+                  Cards with airline miles accumulation, hotel points, or access
+                  to airport lounges are ideal for frequent travelers. These
+                  cards allow you to save on flights, hotel stays, and enjoy
+                  exclusive travel benefits like priority boarding.
+                </p>
+              </Accordion>
+
+              <Accordion
+                title="Is it safe to use credit cards online?"
+                client:load
+              >
+                <p class="text-left">
+                  Yes, modern credit cards offer advanced security features such
+                  as fraud monitoring, zero liability protection, virtual card
+                  numbers, and instant transaction alerts to protect your
+                  purchases and personal information.
+                </p>
+              </Accordion>
+            </div>
+
+            <p class="text-left mb-8">
+              Explore our recommendations and find the card that best suits your
+              lifestyle and spending habits.
+            </p>
+
+            <!-- Autozep Ad: us_site_2 -->
+            <div
+              id="us_site_2"
+              class="min-w-auto flex justify-center items-center"
+            >
+            </div>
+
+            <p class="text-left mb-8">
+              Explore our recommendations and find the card that best suits your
+              lifestyle and spending habits.
+            </p>
+
+            <!-- Featured Image -->
+            <div class="text-center mb-8">
+              <a
+                href="/financial-solutions/amazon-rewards-visa-credit-card-benefits"
+              >
+                <img
+                  src="/images/cta.png"
+                  alt="Credit Card Recommendations"
+                  class="mx-auto w-10/12 md:w-6/12 h-auto rounded-xl hover:shadow-xl transition-shadow duration-300"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .btn {
+    transition: all 0.3s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .space-y-3 > * + * {
+    margin-top: 0.75rem;
+  }
+</style>

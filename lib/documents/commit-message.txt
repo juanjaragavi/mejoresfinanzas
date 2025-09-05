@@ -1,0 +1,14 @@
+Content cleanup: prune Personal Finance to 6 cornerstone posts, fix frontmatter, and update internal links
+
+- Publish and clean 6 cornerstone Personal Finance posts with mutual interlinks
+- Add missing frontmatter fences; deduplicate and normalize headings/spacing
+- Archive remaining Personal Finance posts via draft:true so listings only show keepers
+- Update internal links to avoid 404s (replace references to archived posts)
+- Fix template.md frontmatter and remove duplicate block
+- Update README and CHANGELOG to reflect the new content strategy
+- Add project .gitignore for Node/Astro
+refactor: Clean up blog structure and update documentation
+
+- Removed deprecated blog category and demo pages.
+- Updated project rules, canonical URL validation, and blog generation prompts.
+- Simplified blog routing by removing old category-based paths.

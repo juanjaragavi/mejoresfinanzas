@@ -1,0 +1,44 @@
+# robots.txt for Financial Blog Template (brand-agnostic)
+# Update domain references as needed after branding
+
+# Universal rules for all crawlers
+User-agent: *
+# Block API endpoints and admin routes
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /admin/
+Disallow: /private/
+# Block temporary and development files
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /.well-known/
+# Block ad network URLs that shouldn't be indexed
+Disallow: /YOUR_NETWORK_CODE/
+Disallow: /23062212598/
+
+# Block known bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Allow social media crawlers for previews
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemaps (updated to production domain)
+Sitemap: https://mejoresfinanzas.com/sitemap-0.xml
+Sitemap: https://mejoresfinanzas.com/sitemap-0.xml

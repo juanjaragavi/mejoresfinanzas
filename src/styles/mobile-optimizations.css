@@ -1,0 +1,245 @@
+/* Mobile-specific optimizations for better UX */
+
+/* Enhanced mobile spacing */
+@media (max-width: 640px) {
+  /* Section padding adjustments for mobile */
+  .section {
+    @apply pt-8 pb-8;
+  }
+
+  /* Content area padding */
+  .content {
+    @apply px-0;
+  }
+
+  /* Button wrapper centering */
+  .btn-wrapper,
+  .text-center {
+    @apply flex flex-col items-center;
+  }
+
+  /* Button mobile enhancements */
+  .btn {
+    @apply min-w-full justify-center;
+  }
+
+  /* Accordion mobile spacing */
+  .accordion-header {
+    @apply px-4 py-3;
+  }
+
+  .accordion-content {
+    @apply px-4;
+  }
+
+  /* Feature list mobile spacing */
+  .flex.items-start.gap-3 {
+    @apply gap-2;
+  }
+
+  /* Image responsive sizing */
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  /* Mobile-optimized text sizes */
+  .text-lg {
+    @apply text-base;
+  }
+
+  /* Mobile-friendly tap targets */
+  a.btn,
+  button {
+    @apply min-h-[48px];
+  }
+}
+
+/* Blog content mobile optimizations */
+@media (max-width: 768px) {
+  /* Fix container overflow issues */
+  .container {
+    @apply !px-4 !max-w-full;
+    overflow-x: hidden;
+  }
+
+  /* Ensure article content doesn't overflow */
+  article {
+    @apply overflow-visible;
+    overflow: visible;
+  }
+
+  /* Blog content specific fixes */
+  .content {
+    @apply !max-w-full overflow-x-hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Fix prose content overflow */
+  .prose {
+    @apply !max-w-full;
+  }
+
+  /* Ensure all content elements respect viewport */
+  .content * {
+    @apply !max-w-full;
+  }
+
+  /* Handle long words and URLs */
+  .content p,
+  .content li,
+  .content td,
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Fix tables on mobile */
+  .content table {
+    @apply block overflow-x-auto whitespace-nowrap max-w-full;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Fix code blocks */
+  .content pre {
+    @apply overflow-x-auto max-w-full;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .content pre code {
+    @apply block min-w-full;
+  }
+
+  /* Fix images */
+  .content img {
+    @apply !max-w-full h-auto;
+  }
+
+  /* Fix iframes (videos, embeds) */
+  .content iframe {
+    @apply !max-w-full;
+  }
+
+  /* Adjust heading sizes for mobile */
+  .content h1 {
+    @apply !text-2xl;
+  }
+
+  .content h2 {
+    @apply !text-xl;
+  }
+
+  .content h3 {
+    @apply !text-lg;
+  }
+
+  /* Fix list indentation on mobile */
+  .content ul,
+  .content ol {
+    @apply !pl-6;
+  }
+
+  /* Ensure proper column behavior on mobile */
+  .row > [class*="col-"] {
+    @apply px-4;
+  }
+
+  /* Post single specific adjustments */
+  .section article {
+    @apply px-0;
+  }
+
+  /* Title adjustments */
+  .h2 {
+    @apply !text-2xl !leading-tight;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Further reduce padding on very small screens */
+  .container {
+    @apply !px-3;
+  }
+
+  .row > [class*="col-"] {
+    @apply px-3;
+  }
+
+  /* Reduce section padding */
+  .section {
+    @apply pt-6 pb-6;
+  }
+}
+
+/* Ensure buttons are properly centered in their containers */
+div:has(> .btn) {
+  @apply text-center;
+}
+
+/* Prevent horizontal scroll on body */
+body {
+  @apply overflow-x-hidden;
+}
+
+/* Footer mobile optimizations */
+@media (max-width: 767px) {
+  /* Compact footer mobile styles */
+  .compact-footer {
+    @apply py-6;
+  }
+
+  .compact-footer .container {
+    @apply px-3;
+  }
+
+  /* Make footer text more readable on mobile */
+  .compact-footer p.text-xs {
+    @apply text-[11px] leading-relaxed;
+  }
+
+  /* Legal links mobile optimization */
+  .footer-links .legal-links-grid {
+    @apply flex flex-col gap-2 mt-2 mb-2;
+  }
+
+  .footer-links .legal-links-grid a {
+    @apply inline-block py-2 px-4 bg-black/5 rounded-md text-sm font-medium;
+    @apply transition-colors duration-200;
+    @apply hover:bg-black/10 active:bg-black/15;
+    min-width: 180px;
+  }
+
+  /* Better touch targets for mobile */
+  .footer-links a {
+    @apply min-h-[44px] flex items-center justify-center;
+  }
+
+  /* Copyright text spacing */
+  .footer-links .border-t {
+    @apply mt-4 pt-4;
+  }
+}
+
+/* Extra small devices footer adjustments */
+@media (max-width: 575.98px) {
+  .compact-footer p.text-xs {
+    @apply text-[10px];
+  }
+
+  .footer-links .legal-links-grid a {
+    @apply text-xs;
+    min-width: 160px;
+  }
+}
+
+/* Mobile viewport meta tag optimization reminder */
+/* Ensure your Base.astro includes:
+   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+*/

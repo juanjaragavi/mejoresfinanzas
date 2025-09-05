@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import config from "@/config/config.json";
+import { plainify } from "@/lib/utils/textConverter";
+
+const { post, index } = Astro.props;
+const { summary_length } = config.settings;
+const collection = post.collection;
+
+const applyLeadingTight =
+  collection === "personal-finance" || collection === "financial-solutions";
+---
+
+<div
+  class="group text-left transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white rounded-lg p-5 article-card"
+  data-categories={JSON.stringify(post.data.categories || [])}
+>
+  {
+    post.data.image && (
+      <div class="overflow-hidden rounded-lg">
+        <a href={`/${post.collection}/${post.id}`}>
+          <Image
+            class="rounded-lg transform transition-transform duration-300 group-hover:scale-105"
+            src={post.data.image}
+            alt={post.data.title}
+            width={index === 0 ? 925 : 445}
+            height={index === 0 ? 475 : 230}
+          />
+        </a>
+      </div>
+    )
+  }
+  <h2
+    class:list={[
+      "h3 mb-2 mt-4 text-left",
+      { "leading-tight": applyLeadingTight },
+    ]}
+  >
+    <a href={`/${post.collection}/${post.id}`} class="block hover:text-primary">
+      {post.data.title}
+    </a>
+  </h2>
+  <p
+    class:list={[
+      "line-clamp-3 text-left",
+      { "leading-tight": applyLeadingTight },
+    ]}
+    set:html={plainify(post.body.slice(0, summary_length))}
+  />
+  <a class="btn btn-primary mt-4" href={`/${post.collection}/${post.id}`}>
+    Read More
+  </a>
+</div>

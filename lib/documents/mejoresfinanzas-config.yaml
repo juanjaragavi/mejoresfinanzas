@@ -1,0 +1,63 @@
+BRAND: "MejoresFinanzas"
+SITE_DESCRIPTION: "MejoresFinanzas is a comprehensive financial wellness blog platform designed to provide valuable financial education, credit card recommendations, and personal finance tools. Building upon the proven success of BudgetBee and UK TopFinanzas, this platform combines the best features from both systems to create an optimized experience for diverse markets."
+PRIMARY_DOMAIN: "https://mejoresfinanzas.com"
+COLOR_PALETTE:
+  primary: "#4A90E2"
+  secondary: "#71C96C" # Using green from BudgetBee's successful design
+  accent: "#F59E0B" # Warm amber for CTAs and highlights
+  neutral_bg: "#ffffff"
+  text: "#111111"
+TYPOGRAPHY:
+  heading_font: "Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+  body_font: "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+TONE_VOICE: "Approachable, trustworthy, educational, unbiased, accessible"
+TARGET_AUDIENCE: "English-speaking consumers aged 25-45, seeking unbiased financial guidance, credit card recommendations, and budgeting tools. Income level $25,000-$75,000 annually with beginner to intermediate financial literacy."
+MARKET: "United States, United Kingdom, Canada, Australia"
+LANGUAGE: "English (United States)"
+FEATURES_TO_ENABLE:
+  - blog
+  - personal-finance
+  - financial-solutions
+  - quiz
+  - credit-card-recommender
+  - calculators
+  - newsletter
+  - search
+  - sitemap
+  - robots_llms
+  - rss-feed
+  - category-pages
+INTEGRATIONS:
+  google_tag_id: "GTM-MP4CPT97" # Using existing GTM from reference projects
+  convertkit:
+    enabled: true
+    form_id: "" # To be configured with actual ConvertKit account
+  mailchimp:
+    enabled: false
+    list_id: "" # Alternative to ConvertKit
+  plausible_domain: "" # Optional analytics alternative
+  hotjar:
+    enabled: false
+    site_id: "" # For heatmap and session recording
+CONTENT_CATEGORIES:
+  - "Personal Finance"
+  - "Financial Solutions"
+  - "Credit Cards"
+  - "Budgeting"
+  - "Debt Management"
+  - "Savings & Investing"
+  - "Financial Literacy"
+  - "Credit Score"
+FUNNEL_STRATEGY: "TOFU/MOFU/BOFU" # Comprehensive funnel coverage
+SOCIAL_HANDLES:
+  twitter: ""
+  linkedin: ""
+  facebook: ""
+  instagram: ""
+  youtube: ""
+REPO_URL: "https://github.com/juanjaragavi/mejoresfinanzas"
+PACKAGE_MANAGER: "pnpm" # Required for this template
+ENVIRONMENT:
+  DEV_URL: "http://localhost:4322"
+  STAGING_URL: "https://staging.mejoresfinanzas.com"
+  PRODUCTION_URL: "https://mejoresfinanzas.com"

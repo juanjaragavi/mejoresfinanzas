@@ -1,0 +1,22 @@
+/* Template customization: Update theme colors and fonts via src/config/theme.json and tailwind plugin files. */
+@import "tailwindcss";
+@plugin "../tailwind-plugin/tw-theme.mjs";
+@plugin "../tailwind-plugin/tw-bs-grid.mjs";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@import "./safe.css";
+@import "./utilities.css";
+
+@layer base {
+  @import "./base.css";
+}
+
+@layer components {
+  @import "./components.css";
+  @import "./navigation.css";
+  @import "./buttons.css";
+  @import "./mobile-optimizations.css";
+  @import "./blog-mobile.css";
+  @import "./ad-aware-design.css";
+}

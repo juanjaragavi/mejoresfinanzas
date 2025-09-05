@@ -1,0 +1,56 @@
+# Financial Blog Template
+
+> This repository provides a brand-agnostic Astro starter for financial content sites. It is intended to be cloned and customized by humans or LLM-based agents. Replace textual branding via `src/config/brand.ts`. Media URLs below are preserved intentionally and can be swapped later.
+
+The template supports personal finance education and financial product content for the US market. It includes:
+
+- Interactive credit card recommendation quizzes with personalized results
+- Comprehensive financial guides covering budgeting, investing, and debt management
+- Unbiased financial product comparisons and recommendations
+- Mobile-optimized responsive design with enhanced blog reading experience
+- SEO-optimized content structure following TOFU/MOFU marketing funnel strategies
+
+The platform is built using modern web technologies including Astro, React, TypeScript, and Tailwind CSS, ensuring fast loading times and excellent user experience.
+
+## LLM Starter Prompt
+
+For LLM-based agents initiating a new site from this template, use the local starter prompt and fill variables before execution:
+
+- lib/documents/LLM_STARTER_PROMPT.md
+
+## Core Documentation
+
+- [README](https://github.com/juanjaragavi/financial-blog-template/blob/main/README.md): Project overview, features, and setup
+- [License](https://github.com/juanjaragavi/financial-blog-template/blob/main/LICENSE): MIT license
+- [Changelog](https://github.com/juanjaragavi/financial-blog-template/blob/main/CHANGELOG.md): Version history and updates
+
+## Financial Content
+
+- [Personal Finance Blog](https://mejoresfinanzas.com/blog/): Articles on budgeting, saving, investing, and planning
+- [Credit Cards](https://mejoresfinanzas.com/personal-finance/): Guides, comparisons, and recommendations
+- [Financial Solutions](https://mejoresfinanzas.com/financial-solutions/): Reviews, loans, and financial tools
+
+## Interactive Tools
+
+- [Credit Card Recommender Quiz](https://mejoresfinanzas.com/quiz/): Multi-step interactive quiz
+- [Credit Card Recommendation Results](https://mejoresfinanzas.com/quiz-results/): Results and recommendations
+
+## Technical Documentation
+
+- [Astro Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/astro.config.mjs): Build and deployment configuration
+- [Package Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/package.json): Dependencies and scripts
+- [TypeScript Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/tsconfig.json): TypeScript compiler settings
+
+## Content Structure
+
+- [Content Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/src/content.config.ts): Content collection schemas and validation
+- [Site Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/src/config/config.json): Site metadata and settings
+- [Menu Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/src/config/menu.json): Navigation structure
+- [Theme Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/src/config/theme.json): Design system and styling
+
+## Optional
+
+- [Deployment Scripts](https://github.com/juanjaragavi/financial-blog-template/tree/main/scripts): Automated deployment and workflow scripts
+- [Public Assets](https://github.com/juanjaragavi/financial-blog-template/tree/main/public): Static files, images, and resources
+- [Component Library](https://github.com/juanjaragavi/financial-blog-template/tree/main/src/components): Reusable UI components and layouts
+- [Styling System](https://github.com/juanjaragavi/financial-blog-template/tree/main/src/styles): CSS and design system files

@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "MejoresFinanzas",
+    "base_url": "https://mejoresfinanzas.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "https://media.topfinanzas.com/images/topnetworks-positivo-sinfondo.webp",
+    "logo_width": "300",
+    "logo_height": "80",
+    "logo_square": "/images/favicon.png",
+    "logo_square_width": "120",
+    "logo_square_height": "120",
+    "logo_text": "MejoresFinanzas"
+  },
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200
+  },
+  "nav_button": {
+    "enable": true,
+    "label": "Get Started",
+    "link": "/blog"
+  },
+  "params": {
+    "contact_form_action": "",
+    "tag_manager_id": "GTM-MP4CPT97",
+    "footer_content": "ALL RIGHTS RESERVED. REPRODUCTION IN WHOLE OR IN PART BY ANY MEANS OR FORM WITHOUT WRITTEN AUTHORIZATION IS PROHIBITED.",
+    "copyright": "© Copyright 2025"
+  },
+  "metadata": {
+    "meta_author": "MejoresFinanzas Team",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "MejoresFinanzas is a comprehensive financial wellness blog platform with unbiased guidance, credit card recommendations, and practical tools."
+  }
+}

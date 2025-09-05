@@ -1,0 +1,77 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Personal Finance",
+      "url": "/personal-finance"
+    },
+    {
+      "name": "Financial Solutions",
+      "url": "/financial-solutions"
+    },
+    {
+      "name": "About Us",
+      "url": "/about"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Home",
+      "menu": [
+        {
+          "text": "About",
+          "url": "/about"
+        },
+        {
+          "text": "Contact Us",
+          "url": "/contact"
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "menu": [
+        {
+          "text": "Financial Guides",
+          "url": "/blog"
+        },
+        {
+          "text": "Credit Card Reviews",
+          "url": "/blog"
+        },
+        {
+          "text": "Budgeting Tips",
+          "url": "/blog"
+        }
+      ]
+    },
+    {
+      "name": "Legal",
+      "menu": [
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "text": "Terms & Conditions",
+          "url": "/terms-conditions"
+        },
+        {
+          "text": "Cookie Policy",
+          "url": "/cookie-policy"
+        }
+      ]
+    }
+  ]
+}

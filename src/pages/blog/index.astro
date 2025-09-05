@@ -1,0 +1,153 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import PaginatedPosts from "@/layouts/components/PaginatedPosts.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import { markdownify } from "@/lib/utils/textConverter";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+const { summary_length } = config.settings;
+const postIndex = (await getEntry(
+  "personal-finance",
+  "-index",
+)) as CollectionEntry<"personal-finance">;
+
+// Get posts from both collections for proper filtering
+const personalFinancePosts = await getSinglePage("personal-finance");
+const financialSolutionsPosts = await getSinglePage("financial-solutions");
+const allPosts = [...personalFinancePosts, ...financialSolutionsPosts];
+const sortedPosts = sortByDate(allPosts);
+const totalPages = Math.ceil(allPosts.length / config.settings.pagination);
+const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+
+// Get unique categories from all posts
+const allCategories = [
+  ...new Set(allPosts.flatMap((post) => post.data.categories || [])),
+];
+---
+
+<Base title={postIndex?.data.title}>
+  <section class="section bg-gradient-to-b from-white to-gray-50 py-10">
+    <div class="container">
+      <div class="max-w-none">
+        <!-- Blog Header -->
+        <div class="mb-8">
+          <h1
+            class="h2 mb-4"
+            set:html={markdownify(postIndex?.data.title || "Articles")}
+          />
+          <p class="text-lg text-gray-700 mb-8 leading-tight">
+            Your source for practical financial guidance and unbiased advice to
+            help you make smarter money decisions.
+          </p>
+        </div>
+
+        <!-- Category Cards Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <a
+            class="block p-6 bg-green-50 rounded-xl hover:shadow-md transition-shadow"
+            href="/financial-solutions"
+          >
+            <h2 class="text-2xl font-semibold text-green-800 mb-2">
+              Credit Cards & Financial Solutions
+            </h2>
+            <p class="text-green-700">
+              Discover detailed reviews and comparisons of credit cards, loans,
+              and financial products.
+            </p>
+          </a>
+          <a
+            class="block p-6 bg-blue-50 rounded-xl hover:shadow-md transition-shadow"
+            href="/personal-finance"
+          >
+            <h2 class="text-2xl font-semibold text-blue-800 mb-2">
+              Personal Finance Guides
+            </h2>
+            <p class="text-blue-700">
+              Explore tips on budgeting, debt management, financial planning,
+              and building wealth.
+            </p>
+          </a>
+        </div>
+
+        <!-- All Articles Section -->
+        <h2 class="text-3xl font-bold mb-4">All Articles</h2>
+
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap gap-2 mb-8">
+          <button
+            class="category-filter px-4 py-2 text-sm font-medium rounded-full transition-colors bg-blue-600 text-white"
+            data-category="all"
+          >
+            All Articles
+          </button>
+          <a
+            href="/personal-finance"
+            class="px-4 py-2 text-sm font-medium rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+          >
+            Personal Finance
+          </a>
+          <a
+            href="/financial-solutions"
+            class="px-4 py-2 text-sm font-medium rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+          >
+            Financial Solutions
+          </a>
+        </div>
+
+        <PaginatedPosts
+          posts={currentPosts}
+          section="blog"
+          currentPage={1}
+          totalPages={totalPages}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filter JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".category-filter");
+      const articleCards = document.querySelectorAll(".article-card");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function (this: HTMLElement) {
+          const category = this.getAttribute("data-category");
+
+          // Update button states
+          filterButtons.forEach((btn) => {
+            btn.classList.remove("bg-blue-600", "text-white");
+            btn.classList.add(
+              "bg-gray-100",
+              "text-gray-700",
+              "hover:bg-gray-200",
+            );
+          });
+          this.classList.remove(
+            "bg-gray-100",
+            "text-gray-700",
+            "hover:bg-gray-200",
+          );
+          this.classList.add("bg-blue-600", "text-white");
+
+          // Filter articles
+          articleCards.forEach((card) => {
+            const categories = JSON.parse(
+              card.getAttribute("data-categories") || "[]",
+            );
+            const htmlCard = card as HTMLElement;
+
+            if (category === "all" || categories.includes(category)) {
+              htmlCard.style.display = "flex";
+            } else {
+              htmlCard.style.display = "none";
+            }
+          });
+        });
+      });
+    });
+  </script>
+</Base>

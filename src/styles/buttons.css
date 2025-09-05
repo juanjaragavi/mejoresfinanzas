@@ -1,0 +1,11 @@
+.btn {
+  @apply text-white flex items-center justify-center w-full text-center font-primary font-bold border px-7 pt-[14px] sm:py-[15px] leading-[18px] transition hover:text-white;
+}
+
+.btn-primary {
+  @apply bg-primary text-white border-transparent rounded-[30px] transition-all duration-300 capitalize hover:scale-105 text-white hover:text-white;
+}
+
+.btn-outline-primary {
+  @apply border-primary text-primary bg-transparent rounded-[30px] hover:bg-primary hover:text-white;
+}

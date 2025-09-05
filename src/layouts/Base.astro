@@ -1,0 +1,576 @@
+---
+// Customization point: Site/base layout
+// Branding and theme are controlled via config.json, theme.json, and src/config/brand.ts
+import config from "@/config/config.json";
+import theme from "@/config/theme.json";
+import social from "@/config/social.json";
+import { plainify } from "@/lib/utils/textConverter";
+import Footer from "@/partials/Footer.astro";
+import CompactFooter from "@/partials/CompactFooter.astro";
+import Header from "@/partials/Header.astro";
+import BackToTopButton from "@/layouts/components/BackToTopButton.astro";
+import AnalyticsWrapper from "../components/analytics/AnalyticsWrapper.tsx";
+import "@/styles/main.css";
+import { AstroFont } from "astro-font";
+import { ClientRouter } from "astro:transitions";
+import ADS from "@/config/ads";
+
+// font families
+const pf = theme.fonts.font_family.primary;
+const sf = theme.fonts.font_family.secondary;
+
+let fontPrimary;
+if (theme.fonts.font_family.primary) {
+  fontPrimary = theme.fonts.font_family.primary
+    .replace(/\+/g, " ")
+    .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
+}
+
+let fontSecondary;
+if (sf) {
+  fontSecondary = sf
+    .replace(/\+/g, " ")
+    .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
+}
+
+// types for frontmatters
+export interface Props {
+  title?: string;
+  meta_title?: string;
+  description?: string;
+  image?: string;
+  noindex?: boolean;
+  canonical?: string;
+  // Add properties for Article schema
+  datePublished?: string; // Expecting ISO 8601 format
+  dateModified?: string; // Expecting ISO 8601 format
+  // Optionally, a type indicator if we want to be very explicit
+  pageType?: "article" | "website";
+}
+
+const {
+  title,
+  meta_title,
+  description,
+  image,
+  noindex,
+  canonical,
+  datePublished,
+  dateModified,
+  pageType,
+} = Astro.props;
+
+// Check if we're on a blog article page
+const pathSegments = Astro.url.pathname.split("/").filter((segment) => segment);
+const isBlogPost =
+  pathSegments[0] === "blog" &&
+  pathSegments.length === 2 &&
+  !pathSegments[1].includes("page") &&
+  !pathSegments[1].includes("category");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <script
+      is:inline
+      data-cfasync="false"
+      src="https://autozep.adzep.io/paid/site.js"
+      async></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href={config.site.favicon} />
+    <!-- theme meta -->
+    <meta name="theme-name" content="financial-blog-template" />
+    <meta name="msapplication-TileColor" content="#4A90E2" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#fff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#000"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Resource Hints -->
+    <link
+      rel="preconnect"
+      href="https://www.googletagmanager.com"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    {
+      /* media.topfinanzas.com is a legacy media CDN used by the source project; safe to keep for template assets. */
+    }
+    <link
+      rel="preconnect"
+      href="https://media.topfinanzas.com"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://media.topfinanzas.com" />
+
+    <link
+      rel="preconnect"
+      href="https://www.google-analytics.com"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <link
+      rel="preconnect"
+      href="https://securepubads.g.doubleclick.net"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net" />
+
+    {/* Optional: For social media embeds, if used */}
+    <link
+      rel="preconnect"
+      href="https://platform.twitter.com"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://platform.twitter.com" />
+
+    <link
+      rel="preconnect"
+      href="https://connect.facebook.net"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+
+    <!-- google font css -->
+    <AstroFont
+      config={[
+        {
+          src: [],
+          preload: false,
+          display: "swap",
+          name: fontPrimary!,
+          fallback: "sans-serif",
+          cssVariable: "font-primary",
+          googleFontsURL: `https://fonts.googleapis.com/css2?family=${pf}&display=swap`,
+        },
+      ]}
+    />
+
+    {
+      sf && (
+        <AstroFont
+          config={[
+            {
+              src: [],
+              preload: false,
+              display: "swap",
+              name: fontSecondary!,
+              fallback: "sans-serif",
+              cssVariable: "font-secondary",
+              googleFontsURL: `https://fonts.googleapis.com/css2?family=${sf}&display=swap`,
+            },
+          ]}
+        />
+      )
+    }
+
+    <!-- responsive meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!-- title -->
+    <title>
+      {plainify(meta_title ? meta_title : title ? title : config.site.title)}
+    </title>
+
+    <!-- canonical url -->
+    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
+
+    <!-- noindex robots -->
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+    <!-- meta-description -->
+    <meta
+      name="description"
+      content={plainify(
+        description ? description : config.metadata.meta_description,
+      )}
+    />
+
+    <ClientRouter />
+
+    <!-- author from config.json -->
+    <meta name="author" content={config.metadata.meta_author} />
+
+    <!-- og-title -->
+    <meta
+      property="og:title"
+      content={plainify(
+        meta_title ? meta_title : title ? title : config.site.title,
+      )}
+    />
+
+    <!-- og-description -->
+    <meta
+      property="og:description"
+      content={plainify(
+        description ? description : config.metadata.meta_description,
+      )}
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
+    />
+
+    <!-- twitter-title -->
+    <meta
+      name="twitter:title"
+      content={plainify(
+        meta_title ? meta_title : title ? title : config.site.title,
+      )}
+    />
+
+    <!-- twitter-description -->
+    <meta
+      name="twitter:description"
+      content={plainify(
+        description ? description : config.metadata.meta_description,
+      )}
+    />
+
+    <!-- og-image -->
+    <meta
+      property="og:image"
+      content={`${config.site.base_url}${
+        image ? image : config.metadata.meta_image
+      }`}
+    />
+
+    <!-- twitter-image -->
+    <meta
+      name="twitter:image"
+      content={`${config.site.base_url}${
+        image ? image : config.metadata.meta_image
+      }`}
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: config.site.title,
+        url: config.site.base_url,
+        // Potential for search functionality if relevant:
+        // "potentialAction": {
+        //   "@type": "SearchAction",
+        //   "target": `${config.site.base_url}/search?q={search_term_string}`,
+        //   "query-input": "required name=search_term_string"
+        // }
+      })}
+    />
+
+    {/* Organization Schema */}
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: config.site.title,
+        url: config.site.base_url,
+        logo: `${config.site.base_url}${config.site.logo}`,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: social.address || "123 Budget Lane", // Use from social.json if available, else placeholder
+          addressLocality: "Finance City", // Placeholder - consider adding to config
+          addressRegion: "FS", // Placeholder - consider adding to config
+          postalCode: "12345", // Placeholder - consider adding to config
+          addressCountry: "US", // Placeholder - consider adding to config
+        },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: social.phone || "+1-555-0100", // Use from social.json if available, else placeholder
+          contactType: "customer support",
+          email:
+            social.email || `support@${new URL(config.site.base_url).host}`, // Use from social.json if available, else placeholder
+        },
+        sameAs: [
+          social.facebook,
+          social.twitter,
+          social.instagram,
+          social.linkedin,
+          // Add other relevant social links from social.json if they exist
+        ].filter(Boolean), // Filter out null/empty/undefined links
+      })}
+    />
+
+    {/* Article Schema (Conditional) */}
+    {
+      pageType === "article" && datePublished && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: plainify(
+              meta_title ? meta_title : title ? title : config.site.title,
+            ),
+            image: [
+              `${config.site.base_url}${image ? image : config.metadata.meta_image}`,
+            ],
+            datePublished: datePublished,
+            dateModified: dateModified ? dateModified : datePublished,
+            author: {
+              "@type": "Person", // Or "Organization" if more appropriate
+              name: config.metadata.meta_author, // Assumes meta_author is a person's name
+            },
+            publisher: {
+              "@type": "Organization",
+              name: config.site.title,
+              logo: {
+                "@type": "ImageObject",
+                url: `${config.site.base_url}${config.site.logo_square}`, // Or standard logo
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `${config.site.base_url}${Astro.url.pathname}`,
+            },
+            description: plainify(
+              description ? description : config.metadata.meta_description,
+            ),
+          })}
+        />
+      )
+    }
+
+    <!-- Google Tag Manager -->
+    <script is:inline define:vars={{ gtmId: config.params.tag_manager_id }}>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", gtmId);
+    </script>
+    <!-- End Google Tag Manager -->
+
+    {/* Google Publisher Tag Scripts */}
+    {
+      /* TODO: Confirm if 'anonymous' is the correct value for crossorigin with GPT. Usually it is. */
+    }
+
+    {/* Template Ad Manager - Prevents duplicate tag calls */}
+    <script type="module" src="/src/lib/ad-manager.js"></script>
+    {/* AdZep activation bridge for Astro view transitions */}
+    <script type="module" src="/src/lib/adzep-page-load-bridge.ts"></script>
+
+    {/* Backup GAM initialization for fallback */}
+    <script
+      async
+      crossorigin="anonymous"
+      id="gpt-js-main"
+      src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script is:inline>
+      {
+        `
+  // Template GAM Configuration with Duplicate Prevention
+      // This serves as backup if the ad-manager module fails
+      window.googletag = window.googletag || {cmd: []};
+
+      // Prevent multiple initializations
+      if (!window.templateGAMInitialized) {
+        window.templateGAMInitialized = true;
+
+        googletag.cmd.push(function() {
+          try {
+            // TODO: BRAND - Update these with your actual Network Code and Ad Unit Paths
+            // Replace 'YOUR_NETWORK_CODE' with your actual Google Ad Manager Network Code
+
+            // Primary mobile ad slots
+            if (!window.siteSlots) {
+              window.siteSlots = {};
+            }
+
+            // Define slots only if not already defined
+            if (!window.siteSlots.mob_1) {
+              window.siteSlots.mob_1 = googletag.defineSlot("/YOUR_NETWORK_CODE/${ADS.gamPathPrefix}_mob_1",
+                [[300, 250], [250, 250], [336, 280]],
+                "div-gpt-ad-${ADS.gamPathPrefix}-mob-1"
+              ).addService(googletag.pubads());
+            }
+
+            if (!window.siteSlots.mob_2) {
+              window.siteSlots.mob_2 = googletag.defineSlot("/YOUR_NETWORK_CODE/${ADS.gamPathPrefix}_mob_2",
+                [[300, 250], [250, 250], [336, 280]],
+                "div-gpt-ad-${ADS.gamPathPrefix}-mob-2"
+              ).addService(googletag.pubads());
+            }
+
+            if (!window.siteSlots.interstitial) {
+              window.siteSlots.interstitial = googletag.defineSlot("/YOUR_NETWORK_CODE/${ADS.gamPathPrefix}_interstitial",
+                ['fluid'],
+                "div-gpt-ad-${ADS.gamPathPrefix}-interstitial"
+              ).addService(googletag.pubads());
+            }
+
+            if (!window.siteSlots.offerwall) {
+              window.siteSlots.offerwall = googletag.defineSlot("/YOUR_NETWORK_CODE/${ADS.gamPathPrefix}_offerwall",
+                ['fluid'],
+                "div-gpt-ad-${ADS.gamPathPrefix}-offerwall"
+              ).addService(googletag.pubads());
+            }
+
+            // Configure GAM settings
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.pubads().setCentering(true);
+
+            // Add site targeting
+            googletag.pubads().setTargeting('site', ADS.siteTarget);
+            googletag.pubads().setTargeting('vertical', 'finance');
+            googletag.pubads().setTargeting('content', 'credit-cards');
+
+            googletag.enableServices();
+
+            console.log('Template GAM: Backup initialization completed');
+
+          } catch (error) {
+            console.error('Template GAM: Backup initialization error:', error);
+          }
+        });
+      }
+    `;
+      }
+    </script>
+    {/* End Ad Manager Scripts */}
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src={`https://www.googletagmanager.com/ns.html?id=${config.params.tag_manager_id}`}
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      >
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {/* Ad Slots with Visual Separation */}
+    {/* Mobile Ad Slot 1 - Above fold content */}
+    <div class="ad-zone" style="display: none;">
+      <div class="mobile-ad-separator"></div>
+      <div id={`div-gpt-ad-${ADS.gamPathPrefix}-mob-1`}>
+        <script is:inline>
+          {
+            `
+            // Display mob_1 ad with duplicate prevention
+            if (window.AdManager) {
+              window.AdManager.displayAd('mob_1', 'div-gpt-ad-${ADS.gamPathPrefix}-mob-1');
+            } else {
+              // Fallback
+              googletag.cmd.push(function() {
+                if (window.siteSlots && window.siteSlots.mob_1) {
+                  googletag.display('div-gpt-ad-${ADS.gamPathPrefix}-mob-1');
+                }
+              });
+            }
+            `;
+          }
+        </script>
+      </div>
+      <div class="ad-separator"></div>
+    </div>
+
+    {/* Mobile Ad Slot 2 - Mid content */}
+    <div class="ad-zone" style="display: none;">
+      <div class="mobile-ad-separator"></div>
+      <div id={`div-gpt-ad-${ADS.gamPathPrefix}-mob-2`}>
+        <script is:inline>
+          {
+            `
+            // Display mob_2 ad with duplicate prevention
+            if (window.AdManager) {
+              window.AdManager.displayAd('mob_2', 'div-gpt-ad-${ADS.gamPathPrefix}-mob-2');
+            } else {
+              // Fallback
+              googletag.cmd.push(function() {
+                if (window.siteSlots && window.siteSlots.mob_2) {
+                  googletag.display('div-gpt-ad-${ADS.gamPathPrefix}-mob-2');
+                }
+              });
+            }
+            `;
+          }
+        </script>
+      </div>
+      <div class="ad-separator"></div>
+    </div>
+
+    {/* Interstitial Ad Slot - Full screen */}
+    <div class="ad-zone" style="display: none;">
+      <div id={`div-gpt-ad-${ADS.gamPathPrefix}-interstitial`}>
+        <script is:inline>
+          {
+            `
+            // Display interstitial ad with duplicate prevention
+            if (window.AdManager) {
+              window.AdManager.displayAd('interstitial', 'div-gpt-ad-${ADS.gamPathPrefix}-interstitial');
+            } else {
+              // Fallback
+              googletag.cmd.push(function() {
+                if (window.siteSlots && window.siteSlots.interstitial) {
+                  googletag.display('div-gpt-ad-${ADS.gamPathPrefix}-interstitial');
+                }
+              });
+            }
+            `;
+          }
+        </script>
+      </div>
+    </div>
+
+    {/* Offerwall Ad Slot */}
+    <div class="ad-zone" style="display: none;">
+      <div class="ad-zone-separator"></div>
+      <div id={`div-gpt-ad-${ADS.gamPathPrefix}-offerwall`}>
+        <script is:inline>
+          {
+            `
+            // Display offerwall ad with duplicate prevention
+            if (window.AdManager) {
+              window.AdManager.displayAd('offerwall', 'div-gpt-ad-${ADS.gamPathPrefix}-offerwall');
+            } else {
+              // Fallback
+              googletag.cmd.push(function() {
+                if (window.siteSlots && window.siteSlots.offerwall) {
+                  googletag.display('div-gpt-ad-${ADS.gamPathPrefix}-offerwall');
+                }
+              });
+            }
+            `;
+          }
+        </script>
+      </div>
+    </div>
+
+    <Header />
+    <main id="main-content">
+      <slot />
+    </main>
+    {isBlogPost ? <CompactFooter /> : <Footer />}
+    <AnalyticsWrapper client:idle />
+    <BackToTopButton />
+  </body>
+</html>

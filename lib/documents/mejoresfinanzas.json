@@ -1,0 +1,137 @@
+{
+  "project_overview": {
+    "project_name": "MejoresFinanzas",
+    "company": "TopNetworks Inc.",
+    "project_type": "Financial Wellness Blog Platform",
+    "framework": "Astro.js 5.x",
+    "status": "Planning Phase",
+    "launch_timeline": "Q1 2025",
+    "language_strategy": {
+      "phase_1": "English content (Launch - Q1 2025)",
+      "phase_2": "Spanish localization (Q3 2025)"
+    },
+    "platform_description": "MejoresFinanzas is a comprehensive financial wellness blog platform designed to provide valuable financial education, credit card recommendations, and personal finance tools. Building upon the proven success of BudgetBee and UK TopFinanzas, this platform combines the best features from both systems to create an optimized experience for diverse markets.",
+    "core_purpose": "To democratize financial education and empower users with unbiased financial guidance, practical budgeting strategies, and personalized credit card recommendations through an accessible, mobile-first platform.",
+    "unique_value_proposition": [
+      "High-quality English financial content with plans for Spanish localization",
+      "Comprehensive financial advice addressing diverse market needs",
+      "No-cost, unbiased credit card comparison and recommendations",
+      "Interactive tools including multi-step quizzes with personalized results",
+      "Mobile-optimized design achieving 100% PageSpeed scores",
+      "GDPR and privacy-compliant lead generation system"
+    ],
+    "technical_foundation": {
+      "based_on": "BudgetBee and UK TopFinanzas architectures",
+      "content_management": "MDX-based content system from BudgetBee",
+      "interactive_features": "Credit card quiz and recommendation engine",
+      "performance": "Astro.js static site generation for optimal speed"
+    }
+  },
+  "target_audience": {
+    "primary_demographics": {
+      "age_range": "25-45 years",
+      "gender": "All genders",
+      "income_level": "$25,000 - $75,000 USD annually",
+      "education": "High school to college educated",
+      "financial_literacy": "Beginner to intermediate",
+      "language": "English-speaking (Phase 1), Spanish-speaking (Phase 2)"
+    },
+    "geographic_focus": {
+      "initial_launch_markets": [
+        "United States",
+        "United Kingdom",
+        "Canada",
+        "Australia"
+      ],
+      "expansion_markets_phase_2": [
+        "Mexico",
+        "Spain",
+        "Colombia",
+        "Argentina",
+        "Chile",
+        "Peru",
+        "US Hispanic population"
+      ]
+    },
+    "psychographic_profile": {
+      "financial_goals": [
+        "Building credit history",
+        "Managing debt responsibly",
+        "Saving for major purchases",
+        "Understanding financial products",
+        "Improving financial wellness"
+      ],
+      "pain_points": [
+        "Complex financial terminology",
+        "Lack of Spanish financial resources",
+        "Confusion about credit card benefits",
+        "Difficulty comparing financial products",
+        "Limited access to unbiased financial advice"
+      ],
+      "digital_behavior": [
+        "Mobile-first users (85% mobile traffic expected)",
+        "Social media active (Facebook, WhatsApp, Instagram)",
+        "Preference for visual and interactive content",
+        "Values trust and authority in financial matters",
+        "Seeks peer recommendations and reviews"
+      ]
+    },
+    "user_personas": [
+      {
+        "name": "Sarah the Entrepreneur",
+        "age": 32,
+        "occupation": "Small business owner",
+        "needs": "Business credit cards, expense management tools",
+        "goals": "Separate personal and business finances, build business credit"
+      },
+      {
+        "name": "Michael the Young Professional",
+        "age": 28,
+        "occupation": "Tech professional",
+        "needs": "Travel rewards cards, cashback optimization",
+        "goals": "Maximize rewards while building credit history"
+      },
+      {
+        "name": "Jennifer the Family Manager",
+        "age": 38,
+        "occupation": "Teacher",
+        "needs": "Family budgeting tools, low-interest cards, balance transfer options",
+        "goals": "Manage household expenses efficiently, save for college funds"
+      }
+    ]
+  },
+  "competitive_advantages": {
+    "market_differentiators": [
+      "Comprehensive English financial content with Spanish expansion planned",
+      "Multi-market financial product expertise (US, UK, CA, AU)",
+      "Unbiased recommendations without hidden agendas",
+      "Free access to all tools and content",
+      "Mobile-first design optimized for all users",
+      "Simplified financial language for accessibility",
+      "Proven architecture from BudgetBee and UK TopFinanzas"
+    ],
+    "technical_advantages": [
+      "Lightning-fast load times (100% PageSpeed score target)",
+      "Astro.js static site generation for optimal performance",
+      "Mobile-optimized with responsive design",
+      "Progressive Web App capabilities",
+      "SEO-optimized from the ground up",
+      "Built-in scalability for multi-language support"
+    ],
+    "content_advantages": [
+      "High-quality, original English content",
+      "Comprehensive coverage of financial products",
+      "Interactive tools and calculators",
+      "Multi-step credit card recommendation quiz",
+      "Educational content across all funnel stages (TOFU/MOFU/BOFU)",
+      "Regular updates and fresh content"
+    ],
+    "business_advantages": [
+      "Proven monetization model from existing platforms",
+      "Established affiliate partnerships",
+      "Email list building and lead generation",
+      "Low operational costs with high scalability",
+      "Multiple revenue streams (affiliate, advertising, sponsored content)"
+    ]
+  }
+}
