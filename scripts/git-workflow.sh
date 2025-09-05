@@ -43,14 +43,19 @@ else
   echo "No merge conflicts detected."
 fi
 
-# Step 4: Check if commit message file exists
-if [ -f "./lib/documents/commit-message.txt" ]; then
-  echo "Committing with message from commit-message.txt..."
-  git commit -F ./lib/documents/commit-message.txt
+# Step 4: Commit only if there are staged changes
+if git diff --cached --quiet; then
+  echo "No staged changes to commit. Skipping commit step."
 else
-  echo "No commit message file found. Please enter commit message:"
-  read -p "> " commit_message
-  git commit -m "$commit_message"
+  # Commit using message file if present, otherwise prompt
+  if [ -f "./lib/documents/commit-message.txt" ]; then
+    echo "Committing with message from commit-message.txt..."
+    git commit -F ./lib/documents/commit-message.txt
+  else
+    echo "No commit message file found. Please enter commit message:"
+    read -p "> " commit_message
+    git commit -m "$commit_message"
+  fi
 fi
 
 # Step 5: Push to current branch
