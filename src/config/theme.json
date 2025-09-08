@@ -16,9 +16,9 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Montserrat:wght@300;400;600;700",
+      "primary": "Work+Sans:ital,wght@0,100..900;1,100..900",
       "primary_type": "sans-serif",
-      "secondary": "Inter:wght@300;400;500;600",
+      "secondary": "",
       "secondary_type": "sans-serif"
     },
     "font_size": {

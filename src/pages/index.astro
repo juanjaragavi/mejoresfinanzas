@@ -51,9 +51,9 @@ const {
 const { summary_length } = config.settings;
 const posts = (await getSinglePage("personal-finance")) ?? [];
 const sortedPosts = posts.length ? sortByDate(posts) : [];
-const latestPosts = sortedPosts.slice(0, 3);
+const latestPosts = sortedPosts.slice(0, 4);
 const featuredPost = sortedPosts[0] ?? null;
-const featuredPosts = sortedPosts.slice(1, 4);
+const featuredPosts = sortedPosts.slice(1, 5);
 ---
 
 <Base>
