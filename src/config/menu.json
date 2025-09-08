@@ -18,11 +18,11 @@
     },
     {
       "name": "Sobre Nosotros",
-      "url": "/about"
+      "url": "/acerca-de"
     },
     {
       "name": "Contacto",
-      "url": "/contact"
+      "url": "/contacto"
     }
   ],
   "footer": [
@@ -31,11 +31,11 @@
       "menu": [
         {
           "text": "Sobre Nosotros",
-          "url": "/about"
+          "url": "/acerca-de"
         },
         {
           "text": "Contáctanos",
-          "url": "/contact"
+          "url": "/contacto"
         }
       ]
     },
