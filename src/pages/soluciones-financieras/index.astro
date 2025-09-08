@@ -1,0 +1,59 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import PaginatedPosts from "@/layouts/components/PaginatedPosts.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import { markdownify } from "@/lib/utils/textConverter";
+import { getEntry } from "astro:content";
+
+const { summary_length } = config.settings;
+const postIndex = await getEntry("financial-solutions", "-index");
+const posts = await getSinglePage("financial-solutions");
+const sortedPosts = sortByDate(posts);
+const totalPages = Math.ceil(posts.length / config.settings.pagination);
+const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+---
+
+<Base title={postIndex?.data.title}>
+  <section class="section bg-gradient-to-b from-white to-gray-50 py-10">
+    <div class="container">
+      <div class="max-w-none">
+        <div class="mb-8">
+          <h1
+            class="h2 mb-4"
+            set:html={markdownify(
+              postIndex?.data.title || "Soluciones Financieras",
+            )}
+          />
+          <p class="text-lg text-gray-700 mb-8 leading-tight">
+            Descubre reseñas detalladas y comparaciones de tarjetas de crédito,
+            préstamos y productos financieros para tomar decisiones informadas.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-8">
+          <a
+            href="/blog"
+            class="px-4 py-2 text-sm font-medium rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+            >Todos los Artículos</a
+          >
+          <a
+            href="/finanzas-personales"
+            class="px-4 py-2 text-sm font-medium rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+            >Finanzas Personales</a
+          >
+          <button
+            class="px-4 py-2 text-sm font-medium rounded-full transition-colors bg-blue-600 text-white"
+            >Soluciones Financieras</button
+          >
+        </div>
+        <PaginatedPosts
+          posts={currentPosts}
+          section="soluciones-financieras"
+          currentPage={1}
+          totalPages={totalPages}
+        />
+      </div>
+    </div>
+  </section>
+</Base>

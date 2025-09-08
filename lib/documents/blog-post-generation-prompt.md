@@ -120,13 +120,13 @@ After successfully creating and saving a new blog post, **you must ensure the ar
    - Aggregated content from both personal-finance and financial-solutions collections
 
 3. **Category-Specific Pages**:
-   - **Personal Finance**: `/personal-finance/` (`src/pages/personal-finance/index.astro`)
-   - **Financial Solutions**: `/financial-solutions/` (`src/pages/financial-solutions/index.astro`)
+   - **Personal Finance**: `/finanzas-personales/` (`src/pages/finanzas-personales/index.astro`)
+   - **Financial Solutions**: `/soluciones-financieras/` (`src/pages/soluciones-financieras/index.astro`)
 
 4. **Pagination Pages**:
    - Blog pagination: `/blog/page/[slug].astro`
-   - Personal Finance pagination: `/personal-finance/page/[slug].astro`
-   - Financial Solutions pagination: `/financial-solutions/page/[slug].astro`
+   - Personal Finance pagination: `/finanzas-personales/page/[slug].astro`
+   - Financial Solutions pagination: `/soluciones-financieras/page/[slug].astro`
 
 5. **Category Filter Pages**:
 

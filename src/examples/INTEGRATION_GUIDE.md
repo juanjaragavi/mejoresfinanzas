@@ -98,7 +98,7 @@ const currentPagePosts = allPosts.slice(0, postsPerPage);
 </Base>
 ```
 
-### 3. Update Category Pages (`src/pages/personal-finance/index.astro`)
+### 3. Update Category Pages (`src/pages/finanzas-personales/index.astro`)
 
 ```astro
 ---

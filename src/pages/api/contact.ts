@@ -28,7 +28,8 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Get environment variables
     const apiKey = import.meta.env.SENDGRID_API_KEY;
-    const senderEmail = import.meta.env.SENDER_EMAIL || "noreply@mejoresfinanzas.com";
+    const senderEmail =
+      import.meta.env.SENDER_EMAIL || "noreply@mejoresfinanzas.com";
     const recipientEmail =
       import.meta.env.RECIPIENT_EMAIL || "info@mejoresfinanzas.com";
 

@@ -225,7 +225,9 @@ function main() {
     console.log("\n🎉 Sitemap generation and analysis complete!");
     console.log("\nNext steps:");
     console.log('1. Run "pnpm build" to generate actual sitemap files');
-    console.log("2. Verify sitemap at: https://mejoresfinanzas.com/sitemap-0.xml");
+    console.log(
+      "2. Verify sitemap at: https://mejoresfinanzas.com/sitemap-0.xml",
+    );
     console.log("3. Submit to Google Search Console");
   } catch (error) {
     console.error("❌ Error generating sitemap:", error);

@@ -1,5 +1,15 @@
 chore: rename project references from financial-blog-template to mejoresfinanzas
+feat(localization): implement Spanish (es-US) content & routing layer with automated slugs, redirects, and docs
 
+Summary:
+- Added automated Spanish localization for Personal Finance & Financial Solutions content (frontmatter lang + publish).
+- Generated Spanish slugs & mapping (slug-mapping.json) and rewrote internal links.
+- Introduced Spanish route layers: /finanzas-personales, /soluciones-financieras (index, single, pagination) preserving original collection IDs.
+- Added Netlify 301 redirects (wildcard + per-post) from legacy English category paths.
+- Updated sitemap config recognition for localized hubs (already listing Spanish routes) and verified successful build (150 pages).
+- Added translation glossary and updated README, CHANGELOG, DOCUMENTATION with localization details.
+
+Next steps (not in this commit): finalize manual translation polish, normalize remaining English-heavy slugs, add hreflang/canonical pairing, implement language switcher.
 Updated all hardcoded paths, names, and service identifiers after repository rename.
 
 Changes:

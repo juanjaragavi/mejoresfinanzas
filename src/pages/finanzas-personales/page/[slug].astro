@@ -1,0 +1,40 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import PaginatedPosts from "@/layouts/components/PaginatedPosts.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+
+export async function getStaticPaths() {
+  const posts = await getSinglePage("personal-finance");
+  const totalPages = Math.ceil(posts.length / config.settings.pagination);
+  const paths = [];
+  for (let i = 1; i < totalPages; i++) {
+    paths.push({ params: { slug: (i + 1).toString() } });
+  }
+  return paths;
+}
+
+const posts = await getSinglePage("personal-finance");
+const sortedPosts = sortByDate(posts);
+const { slug } = Astro.params;
+const currentPage = parseInt(slug || "1");
+const { pagination } = config.settings;
+const totalPages = Math.ceil(sortedPosts.length / pagination);
+const start = (currentPage - 1) * pagination;
+const end = start + pagination;
+const currentPosts = sortedPosts.slice(start, end);
+---
+
+<Base title={`Finanzas Personales (Página ${currentPage})`}>
+  <section class="section py-10">
+    <div class="container">
+      <PaginatedPosts
+        posts={currentPosts}
+        section="finanzas-personales"
+        currentPage={currentPage}
+        totalPages={totalPages}
+      />
+    </div>
+  </section>
+</Base>

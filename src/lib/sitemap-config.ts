@@ -49,12 +49,12 @@ export const CORE_PAGES: Record<string, Omit<SitemapEntry, "url">> = {
     priority: 0.9,
     lastmod: new Date().toISOString().split("T")[0],
   },
-  "/personal-finance/": {
+  "/finanzas-personales/": {
     changefreq: "weekly",
     priority: 0.9,
     lastmod: new Date().toISOString().split("T")[0],
   },
-  "/financial-solutions/": {
+  "/soluciones-financieras/": {
     changefreq: "weekly",
     priority: 0.9,
     lastmod: new Date().toISOString().split("T")[0],
@@ -184,7 +184,10 @@ export function getSitemapConfig(url: string): Omit<SitemapEntry, "url"> {
   const now = new Date().toISOString().split("T")[0];
 
   // Personal finance articles
-  if (path.includes("/personal-finance/") && path !== "/personal-finance/") {
+  if (
+    path.includes("/finanzas-personales/") &&
+    path !== "/finanzas-personales/"
+  ) {
     return {
       ...CONTENT_PATTERNS["personal-finance-article"],
       lastmod: lastWeek,
@@ -193,8 +196,8 @@ export function getSitemapConfig(url: string): Omit<SitemapEntry, "url"> {
 
   // Financial solutions
   if (
-    path.includes("/financial-solutions/") &&
-    path !== "/financial-solutions/"
+    path.includes("/soluciones-financieras/") &&
+    path !== "/soluciones-financieras/"
   ) {
     return {
       ...CONTENT_PATTERNS["financial-solution"],

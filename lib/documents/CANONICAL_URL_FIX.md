@@ -34,8 +34,8 @@
 **Files Updated**:
 
 - `/src/pages/blog/page/[slug].astro`
-- `/src/pages/personal-finance/page/[slug].astro`
-- `/src/pages/financial-solutions/page/[slug].astro`
+- `/src/pages/finanzas-personales/page/[slug].astro`
+- `/src/pages/soluciones-financieras/page/[slug].astro`
 
 ### 3. Blocked Ad Network URLs in robots.txt
 
@@ -51,8 +51,8 @@ Disallow: /23062212598/
 
 ### Pagination Pages (Fixed Canonical Format)
 
-| URL             | Canonical URL                      |
-| --------------- | ---------------------------------- |
+| URL             | Canonical URL                              |
+| --------------- | ------------------------------------------ |
 | `/blog/page/12` | `https://mejoresfinanzas.com/blog/page/12` |
 | `/blog/page/3`  | `https://mejoresfinanzas.com/blog/page/3`  |
 | `/blog/page/4`  | `https://mejoresfinanzas.com/blog/page/4`  |
@@ -106,8 +106,8 @@ Disallow: /23062212598/
 ### Files Modified
 
 1. `/src/pages/blog/page/[slug].astro` - Fixed canonical URL format
-2. `/src/pages/personal-finance/page/[slug].astro` - Fixed canonical URL format
-3. `/src/pages/financial-solutions/page/[slug].astro` - Fixed canonical URL format
+2. `/src/pages/finanzas-personales/page/[slug].astro` - Fixed canonical URL format
+3. `/src/pages/soluciones-financieras/page/[slug].astro` - Fixed canonical URL format
 4. `/public/robots.txt` - Added ad network URL blocking rules
 
 ### Validation Tools

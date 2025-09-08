@@ -1,0 +1,20 @@
+---
+import PostSingle from "@/layouts/PostSingle.astro";
+import { getEntry, getCollection } from "astro:content";
+import { AstroError } from "astro/errors";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("financial-solutions");
+  return entries.map((e) => ({ params: { single: e.id } }));
+}
+
+const { single } = Astro.params;
+let entry;
+try {
+  entry = await getEntry("financial-solutions", single);
+} catch (e) {
+  throw new AstroError(`Post not found: ${single}`);
+}
+---
+
+<PostSingle post={entry} collection="financial-solutions" />

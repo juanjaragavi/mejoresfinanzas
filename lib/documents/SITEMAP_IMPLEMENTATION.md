@@ -137,8 +137,8 @@ serialize(item) {
 ```txt
 Homepage: /
 Blog Hub: /blog/
-Personal Finance Hub: /personal-finance/
-Financial Solutions Hub: /financial-solutions/
+Personal Finance Hub: /finanzas-personales/
+Financial Solutions Hub: /soluciones-financieras/
 Credit Card Quiz: /quiz/
 Quiz Results: /quiz-results/
 Recommender Tools: /credit-card-recommender-p1/ (p2, p3)
@@ -148,8 +148,8 @@ Recommender Tools: /credit-card-recommender-p1/ (p2, p3)
 
 ```txt
 Support: /faq/, /pricing/, /contact/
-Content Articles: /personal-finance/{article-slug}/
-Product Pages: /financial-solutions/{product-slug}/
+Content Articles: /finanzas-personales/{article-slug}/
+Product Pages: /soluciones-financieras/{product-slug}/
 About Page: /about/
 ```
 
@@ -158,7 +158,7 @@ About Page: /about/
 ```txt
 Categories: /categories/
 Pagination: /blog/page/{number}/
-Content Pagination: /personal-finance/page/{number}/
+Content Pagination: /finanzas-personales/page/{number}/
 ```
 
 ### **Low Priority (0.2-0.3)**

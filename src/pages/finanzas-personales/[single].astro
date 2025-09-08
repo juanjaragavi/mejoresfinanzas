@@ -1,0 +1,21 @@
+---
+// Dynamic Spanish route aliasing to personal-finance content
+import PostSingle from "@/layouts/PostSingle.astro";
+import { getEntry, getCollection } from "astro:content";
+import { AstroError } from "astro/errors";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("personal-finance");
+  return entries.map((e) => ({ params: { single: e.id } }));
+}
+
+const { single } = Astro.params;
+let entry;
+try {
+  entry = await getEntry("personal-finance", single);
+} catch (e) {
+  throw new AstroError(`Post not found: ${single}`);
+}
+---
+
+<PostSingle post={entry} collection="personal-finance" />

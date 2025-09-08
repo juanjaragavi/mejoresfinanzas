@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Started migration of marketing-related components and custom scripts (e.g., Google Tag Manager, UTM persister) from TopFinanzas UK. (May 26, 2025)
 - Added AdZep ad units us_site_3 (post-top) and us_site_4 (in-article fallback) to all Personal Finance (TOFU/MOFU) articles by updating PostSingle layout with category-normalized detection. (Sep 1, 2025)
 - Personal Finance cleanup: reduced to 6 cornerstone posts (published, interlinked), archived the rest via draft flags, fixed frontmatter fences and duplicate sections, and normalized internal links to avoid 404s. (Sep 5, 2025)
+- Spanish localization infrastructure: automated slug generation, frontmatter lang insertion (es-US), draft -> false publishing, internal link rewrites, new Spanish route layers (`/finanzas-personales`, `/soluciones-financieras`), Netlify 301 redirects from legacy English category paths, sitemap config updated for localized hubs, and added translation glossary & slug mapping artifacts. (Sep 8, 2025)
 
 ### Changed
 

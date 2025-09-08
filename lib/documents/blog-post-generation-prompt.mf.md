@@ -6,8 +6,8 @@
 
 - Project framework: Astro 5 + content collections (MD/MDX) under `src/content/`
 - Collections used for articles:
-  - Personal Finance: `src/content/personal-finance/`
-  - Financial Solutions: `src/content/financial-solutions/`
+  - Personal Finance: `src/content/finanzas-personales/`
+  - Financial Solutions: `src/content/soluciones-financieras/`
   - Blog hub (optional): `src/content/blog/`
 - Domain: configured in `src/config/config.json` → `site.base_url` (currently `https://mejoresfinanzas.com`).
 - Sitemap to consult before writing: `dist/sitemap-index.xml` (build-generated). Use it to avoid duplicate topics/URLs and to select existing internal links.
@@ -38,10 +38,10 @@ Read and follow this whole file. Then generate a SEO-optimized blog article with
 ## Routing the article to the correct collection
 
 - If Is it a pillar? = Yes → This is a Pillar article for the Pillar category.
-  - For Money Management and similar general education topics: create in `src/content/personal-finance/`.
+  - For Money Management and similar general education topics: create in `src/content/finanzas-personales/`.
 - If Is it a pillar? = No → This is a Cluster article.
-  - TOFU topics (general education) → `src/content/personal-finance/`
-  - MOFU topics related to specific products/solutions (e.g., credit cards) → `src/content/financial-solutions/`
+  - TOFU topics (general education) → `src/content/finanzas-personales/`
+  - MOFU topics related to specific products/solutions (e.g., credit cards) → `src/content/soluciones-financieras/`
 
 Note: The homepage Latest/Featured sections read from Personal Finance only. If you want homepage visibility, place the article in `personal-finance`.
 
@@ -101,8 +101,8 @@ draft: false
 ## File placement & naming
 
 - Directory:
-  - TOFU education → `src/content/personal-finance/`
-  - Product/solution MOFU → `src/content/financial-solutions/`
+  - TOFU education → `src/content/finanzas-personales/`
+  - Product/solution MOFU → `src/content/soluciones-financieras/`
 - Filename: kebab-case from final title (e.g., `how-to-create-a-budget-that-works.mdx`)
 - Format: `.mdx` recommended
 
@@ -118,12 +118,12 @@ Verify the new article appears in:
    - Featured Posts (personal-finance articles 2–4)
 2. Blog hub (`src/pages/blog/index.astro`) — aggregated list
 3. Category pages
-   - Personal Finance → `/personal-finance/`
-   - Financial Solutions → `/financial-solutions/`
+   - Personal Finance → `/finanzas-personales/`
+   - Financial Solutions → `/soluciones-financieras/`
 4. Pagination pages
    - `/blog/page/[slug].astro`
-   - `/personal-finance/page/[slug].astro`
-   - `/financial-solutions/page/[slug].astro`
+   - `/finanzas-personales/page/[slug].astro`
+   - `/soluciones-financieras/page/[slug].astro`
 
 ## Troubleshooting missing articles
 
@@ -177,6 +177,6 @@ English (United States)
 
 - The full context and details for this topic (Tentative Title, Content Focus, etc.) are located in the row for this pillar within `lib/documents/topfinanzas-us-topic-outline.csv`.
 - Before generating content, review the local sitemap at `dist/sitemap-index.xml` to avoid duplication and to choose internal links that already exist on the configured domain (default `https://mejoresfinanzas.com`).
-- If the Funnel Stage is TOFU, create the new article in `src/content/personal-finance/` (for homepage visibility). If it’s MOFU and solution-specific, use `src/content/financial-solutions/`.
+- If the Funnel Stage is TOFU, create the new article in `src/content/finanzas-personales/` (for homepage visibility). If it’s MOFU and solution-specific, use `src/content/soluciones-financieras/`.
 - Match the frontmatter schema and date format exactly; set `draft: false` to publish.
 ```

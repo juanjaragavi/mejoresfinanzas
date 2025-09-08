@@ -26,6 +26,23 @@ Branding defaults:
 - Search integration (Fuse.js)
 - Design system via theme.json and Tailwind plugin
 
+## Spanish Localization (es-US)
+
+This project now includes a full Spanish (US) localization layer without renaming the underlying Astro content collection directories. Key aspects:
+
+- Frontmatter: All localized posts include `lang: es-US` and are published (`draft: false`).
+- Slugs & URLs: Spanish category route segments exposed via new pages under `/finanzas-personales/` and `/soluciones-financieras/` while legacy `/personal-finance/` and `/financial-solutions/` remain for backwards compatibility.
+- Automation Scripts:
+  - `scripts/localize-content.mjs` – generates Spanish slugs, updates frontmatter, builds `lib/documents/slug-mapping.json`.
+  - `scripts/update-internal-links.mjs` – rewrites internal links to Spanish category paths using the mapping.
+  - `scripts/generate-redirects-from-mapping.mjs` – creates Netlify `_redirects` (wildcard + per-post 301s).
+- Glossary: `lib/documents/translation-glossary-es-US.md` enforces terminology and style consistency.
+- Redirects: `_redirects` contains permanent 301 mappings from legacy English paths to their Spanish equivalents for SEO continuity.
+- Sitemap: `src/lib/sitemap-config.ts` updated to include localized hub pages (`/finanzas-personales/`, `/soluciones-financieras/`) with weekly change frequency.
+- Dual Access: English directory names retained internally to avoid breaking existing collection schemas; Spanish pages surface localized routes.
+
+Follow-up translation refinement (ensuring 100% human-quality body copy) can proceed iteratively without altering the routing layer.
+
 ## Getting Started
 
 Quick start:

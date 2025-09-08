@@ -72,8 +72,8 @@ src/pages/
 ### Pagination System
 
 - Main blog: `/blog/page/[slug].astro`
-- Personal finance: `/personal-finance/page/[slug].astro`
-- Financial solutions: `/financial-solutions/page/[slug].astro`
+- Personal finance: `/finanzas-personales/page/[slug].astro`
+- Financial solutions: `/soluciones-financieras/page/[slug].astro`
 
 ## LLM Starter Prompt
 
@@ -91,7 +91,7 @@ When creating new articles:
 2. Check `lib/documents/topfinanzas-us-topic-outline.csv` for article type (pillar/cluster)
 3. Verify existing content via `dist/sitemap-index.xml` to avoid duplicates
 4. Use US English (en-US) with your site domain for internal links
-5. Place TOFU content in `src/content/personal-finance/`
+5. Place TOFU content in `src/content/finanzas-personales/`
 
 ### Required Frontmatter
 
