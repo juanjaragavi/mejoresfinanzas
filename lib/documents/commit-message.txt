@@ -1,14 +1,5 @@
-Content cleanup: prune Personal Finance to 6 cornerstone posts, fix frontmatter, and update internal links
+chore(config,docs): set default port to 4322 and update docs to prevent prod conflict
 
-- Publish and clean 6 cornerstone Personal Finance posts with mutual interlinks
-- Add missing frontmatter fences; deduplicate and normalize headings/spacing
-- Archive remaining Personal Finance posts via draft:true so listings only show keepers
-- Update internal links to avoid 404s (replace references to archived posts)
-- Fix template.md frontmatter and remove duplicate block
-- Update README and CHANGELOG to reflect the new content strategy
-- Add project .gitignore for Node/Astro
-refactor: Clean up blog structure and update documentation
-
-- Removed deprecated blog category and demo pages.
-- Updated project rules, canonical URL validation, and blog generation prompts.
-- Simplified blog routing by removing old category-based paths.
+- astro.config.mjs: server and preview now on 4322 with strictPort
+- docs: updated references from 4321 to 4322 (WARP.md, README.md, rules)
+- note: run pnpm preview on port 4322 in prod or adjust Apache proxy accordingly
