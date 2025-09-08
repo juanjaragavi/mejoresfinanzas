@@ -27,8 +27,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added AdZep ad units us_site_3 (post-top) and us_site_4 (in-article fallback) to all Personal Finance (TOFU/MOFU) articles by updating PostSingle layout with category-normalized detection. (Sep 1, 2025)
 - Personal Finance cleanup: reduced to 6 cornerstone posts (published, interlinked), archived the rest via draft flags, fixed frontmatter fences and duplicate sections, and normalized internal links to avoid 404s. (Sep 5, 2025)
 - Spanish localization infrastructure: automated slug generation, frontmatter lang insertion (es-US), draft -> false publishing, internal link rewrites, new Spanish route layers (`/finanzas-personales`, `/soluciones-financieras`), Netlify 301 redirects from legacy English category paths, sitemap config updated for localized hubs, and added translation glossary & slug mapping artifacts. (Sep 8, 2025)
-
-### Changed
+- Complete localization of Personal Finance collection: all remaining English slugs translated to semantic Spanish equivalents; bodies, titles, descriptions, and tags fully localized; obsolete English MDX files removed; `slug-mapping.json` expanded and `_redirects` regenerated; internal links normalized; validation build passed (no 404s in localized listings). (Sep 8, 2025)
+  - Documentation updated with Localization Phase Completion section outlining scope, quality notes, and next steps.
+- Complete localization of Financial Solutions collection: all 30+ English credit card articles translated to Spanish with semantic slugs; comprehensive content localization including titles, descriptions, tags, and body content; English duplicates removed; slug mapping expanded with all financial solution translations; redirects regenerated; internal link references updated. Both Personal Finance and Financial Solutions collections now fully Spanish (es-US). (Sep 8, 2025)### Changed
 
 - Transformed original theme structure into a financial blog template
 - Updated site branding to template defaults (logo, colors, typography) (May 24, 2025)

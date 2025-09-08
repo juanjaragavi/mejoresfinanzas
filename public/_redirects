@@ -1,5 +1,5 @@
-/personal-finance/* /finanzas-personales/:splat 301
-/financial-solutions/* /soluciones-financieras/:splat 301
+Redirects written: /Users/macbookpro/GitHub/mejoresfinanzas/public/_redirects lines: 67
+inancieras/:splat 301
 /personal-finance/are-you-a-spender-or-a-saver-how-your-money-personality-shapes-your-financial-success /finanzas-personales/are-you-a-spender-or-a-saver-how-your-money-personality-shapes-your-personal-finance-success 301
 /personal-finance/setting-financial-goals-a-beginners-guide-to-planning-your-future /finanzas-personales/estableciendo-metas-financieras-una-guia-para-principiantes-para-planificar-tu-futuro 301
 /personal-finance/simple-ways-to-start-saving-money-today-even-on-a-tight-budget /finanzas-personales/maneras-sencillas-de-empezar-a-ahorrar-dinero-hoy-incluso-con-un-presupuesto-ajustado 301
@@ -8,6 +8,8 @@
 /personal-finance/what-is-an-emergency-fund-and-why-you-need-one /finanzas-personales/emergency-funds-in-personal-finance-what-they-are-and-why-you-absolutely-need-one 301
 /personal-finance/what-is-personal-finance-and-why-does-it-matter /finanzas-personales/que-son-las-finanzas-personales-y-por-que-importan 301
 /personal-finance/your-net-worth-explained-what-it-is-and-how-to-calculate-it /finanzas-personales/tu-patrimonio-neto-explicado-que-es-y-como-calcularlo 301
+/personal-finance/budgeting-methods-compared-which-approach-fits-your-spending-style /finanzas-personales/metodos-de-presupuesto-comparados-que-enfoque-se-adapta-a-tu-estilo-de-gasto 301
+/personal-finance/building-good-money-habits-consistency-is-key /finanzas-personales/construyendo-buenos-habitos-financieros-la-consistencia-es-clave 301
 /financial-solutions/amazon-rewards-visa-credit-card-benefits /soluciones-financieras/desbloquea-los-beneficios-de-la-tarjeta-de-credito-amazon-rewards-visa 301
 /financial-solutions/capital-one-quicksilver-student-credit-card-benefits /soluciones-financieras/unlock-the-benefits-of-the-capital-one-quicksilver-student-credit-card 301
 /financial-solutions/capital-one-quicksilver-student-credit-card-requirements /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-capital-one-quicksilver-para-estudiantes 301
@@ -31,3 +33,35 @@
 /financial-solutions/us-bank-cash-plus-visa-signature-card-requirements /soluciones-financieras/us-bank-cash-visa-signature-card-requirements-your-eligibility-guide 301
 /financial-solutions/visa-signature-us-current-build-credit-card-requirements /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-visa-signature-us-current-build 301
 /financial-solutions/wells-fargo-autograph-card-benefits /soluciones-financieras/discover-the-wells-fargo-autograph-card-benefits 301
+/personal-finance/the-first-step-to-financial-freedom-understanding-your-money-mindset /finanzas-personales/primer-paso-hacia-la-libertad-financiera-comprender-tu-mentalidad-del-dinero 301
+/personal-finance/understanding-your-paycheck-taxes-deductions-and-net-pay-explained /finanzas-personales/entiende-tu-nomina-impuestos-deducciones-y-salario-neto-explicado 301
+/personal-finance/roth-ira-vs-traditional-ira-choosing-the-right-retirement-account-for-you /finanzas-personales/roth-ira-vs-ira-tradicional-como-elegir-la-cuenta-de-jubilacion-correcta 301
+/personal-finance/are-you-a-spender-or-a-saver-how-your-money-personality-shapes-your-personal-finance-success /finanzas-personales/eres-gastador-o-ahorrador-como-tu-personalidad-financiera-impacta-tu-exito 301
+/personal-finance/emergency-funds-in-personal-finance-what-they-are-and-why-you-absolutely-need-one /finanzas-personales/fondo-de-emergencia-que-es-por-que-lo-necesitas 301
+/personal-finance/protecting-your-money-an-introduction-to-financial-security /finanzas-personales/protegiendo-tu-dinero-introduccion-a-la-seguridad-financiera 301
+/personal-finance/understanding-different-types-of-credit-cards-rewards-low-apr-secured-and-more /finanzas-personales/tipos-de-tarjetas-de-credito-recompensas-apr-bajo-aseguradas-y-mas 301
+/personal-finance/high-yield-savings-accounts-vs-money-market-accounts-where-to-keep-your-emergency-fund /finanzas-personales/cuentas-ahorro-alto-rendimiento-vs-cuentas-mercado-monetario-donde-guardar-tu-fondo-de-emergencia 301
+/personal-finance/should-you-consolidate-debt-comparing-balance-transfers-personal-loans-and-helocs /finanzas-personales/deberias-consolidar-deuda-transferencias-saldos-prestamos-personales-y-heloc-comparados 301
+/personal-finance/the-difference-between-saving-and-investing-which-should-you-do-first /finanzas-personales/diferencia-entre-ahorrar-e-invertir-que-deberias-hacer-primero 301
+/financial-solutions/benefits-of-the-first-digital-nextgen-mastercard /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-first-digital-nextgen-mastercard 301
+/financial-solutions/first-digital-nextgen-mastercard-requirements /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-first-digital-nextgen-mastercard 301
+/financial-solutions/amazon-rewards-visa-credit-card-requirements /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-amazon-rewards-visa 301
+/financial-solutions/capital-one-savor-rewards-credit-card-requirements /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-capital-one-savor-rewards 301
+/financial-solutions/chase-freedom-unlimited-credit-card-benefits-unlimited-cashback-more /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-chase-freedom-unlimited-cashback-ilimitado-y-mas 301
+/financial-solutions/chase-freedom-unlimited-requirements-your-eligibility-guide /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-chase-freedom-unlimited-guia-de-elegibilidad 301
+/financial-solutions/citi-double-cash-credit-card-benefits-earn-2-cashback-on-every-purchase /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-citi-double-cash-2-cashback-en-todas-tus-compras 301
+/financial-solutions/citi-double-cash-credit-card-requirements-your-path-to-2-cashback /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-citi-double-cash-2-cashback 301
+/financial-solutions/citi-simplicity-card-requirements /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-citi-simplicity 301
+/financial-solutions/discover-the-benefits-of-the-citi-simplicity-card /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-citi-simplicity-sin-cargos-por-pago-tardio-o-penalizaciones 301
+/financial-solutions/discover-it-student-chrome-credit-card-benefits-smart-rewards-for-students /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-discover-it-student-chrome-recompensas-inteligentes-para-estudiantes 301
+/financial-solutions/doordash-rewards-mastercard-benefits-maximize-your-food-savings /soluciones-financieras/beneficios-de-la-mastercard-de-recompensas-doordash-maximiza-tus-ahorros-en-comida 301
+/financial-solutions/us-bank-cash-visa-signature-card-requirements-your-eligibility-guide /soluciones-financieras/requisitos-de-la-tarjeta-us-bank-cash-visa-signature-guia-de-elegibilidad 301
+/financial-solutions/visa-signature-us-current-build-credit-card-benefits /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-visa-signature-us-current-build 301
+/financial-solutions/discover-the-wells-fargo-autograph-card-benefits /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-wells-fargo-autograph 301
+/financial-solutions/wells-fargo-autograph-card-requirements /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-wells-fargo-autograph 301
+/financial-solutions/unlock-the-benefits-of-the-capital-one-quicksilver-student-credit-card /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-capital-one-quicksilver-para-estudiantes 301
+/financial-solutions/unlock-the-benefits-of-the-titanium-rewards-visa-signature-credit-card /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-titanium-rewards-visa-signature 301
+/financial-solutions/titanium-rewards-visa-signature-credit-card-requirements /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-titanium-rewards-visa-signature 301
+/financial-solutions/tomo-credit-card-requirements-your-guide-to-eligibility /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-tomo-guia-de-elegibilidad 301
+/financial-solutions/td-flexpay-credit-card-benefits-unlock-financial-flexibility /soluciones-financieras/beneficios-de-la-tarjeta-de-credito-td-flexpay-desbloquea-flexibilidad-financiera 301
+/financial-solutions/td-flexpay-credit-card-requirements-your-eligibility-checklist /soluciones-financieras/requisitos-de-la-tarjeta-de-credito-td-flexpay-lista-de-elegibilidad 301

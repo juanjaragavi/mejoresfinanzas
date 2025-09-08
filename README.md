@@ -31,7 +31,7 @@ Branding defaults:
 This project now includes a full Spanish (US) localization layer without renaming the underlying Astro content collection directories. Key aspects:
 
 - Frontmatter: All localized posts include `lang: es-US` and are published (`draft: false`).
-- Slugs & URLs: Spanish category route segments exposed via new pages under `/finanzas-personales/` and `/soluciones-financieras/` while legacy `/personal-finance/` and `/financial-solutions/` remain for backwards compatibility.
+- Slugs & URLs: Spanish category route segments exposed via new pages under `/finanzas-personales/` and `/soluciones-financieras/` while legacy `/finanzas-personales/` and `/soluciones-financieras/` remain for backwards compatibility.
 - Automation Scripts:
   - `scripts/localize-content.mjs` – generates Spanish slugs, updates frontmatter, builds `lib/documents/slug-mapping.json`.
   - `scripts/update-internal-links.mjs` – rewrites internal links to Spanish category paths using the mapping.
