@@ -43,13 +43,13 @@ const canonicalUrl = `${config.site.base_url}/finanzas-personales/page/${current
 <Base
   title={postIndex?.data.title}
   canonical={canonicalUrl}
-  description={`${postIndex?.data.description || "Personal finance articles and guides"} - Page ${currentPage}`}
+  description={`${postIndex?.data.description || "Artículos y guías de finanzas personales"} - Página ${currentPage}`}
 >
   <section class="section">
     <div class="container">
       <h1
         class="mb-10 font-normal lg:text-[56px]"
-        set:html={markdownify(postIndex?.data.title || "Personal Finance")}
+        set:html={markdownify(postIndex?.data.title || "Finanzas Personales")}
       />
       <div class="row">
         {

@@ -36,11 +36,11 @@ const allCategories = [
         <div class="mb-8">
           <h1
             class="h2 mb-4"
-            set:html={markdownify(postIndex?.data.title || "Articles")}
+            set:html={markdownify(postIndex?.data.title || "Artículos")}
           />
           <p class="text-lg text-gray-700 mb-8 leading-tight">
-            Your source for practical financial guidance and unbiased advice to
-            help you make smarter money decisions.
+            Tu fuente de orientación financiera práctica y consejos imparciales
+            para ayudarte a tomar decisiones monetarias más inteligentes.
           </p>
         </div>
 
@@ -51,11 +51,11 @@ const allCategories = [
             href="/financial-solutions"
           >
             <h2 class="text-2xl font-semibold text-green-800 mb-2">
-              Credit Cards & Financial Solutions
+              Tarjetas de Crédito y Soluciones Financieras
             </h2>
             <p class="text-green-700">
-              Discover detailed reviews and comparisons of credit cards, loans,
-              and financial products.
+              Descubre reseñas detalladas y comparaciones de tarjetas de
+              crédito, préstamos y productos financieros.
             </p>
           </a>
           <a
@@ -63,17 +63,17 @@ const allCategories = [
             href="/personal-finance"
           >
             <h2 class="text-2xl font-semibold text-blue-800 mb-2">
-              Personal Finance Guides
+              Guías de Finanzas Personales
             </h2>
             <p class="text-blue-700">
-              Explore tips on budgeting, debt management, financial planning,
-              and building wealth.
+              Explora consejos sobre presupuestación, manejo de deudas,
+              planificación financiera y construcción de patrimonio.
             </p>
           </a>
         </div>
 
         <!-- All Articles Section -->
-        <h2 class="text-3xl font-bold mb-4">All Articles</h2>
+        <h2 class="text-3xl font-bold mb-4">Todos los Artículos</h2>
 
         <!-- Category Filter Buttons -->
         <div class="flex flex-wrap gap-2 mb-8">
@@ -81,19 +81,19 @@ const allCategories = [
             class="category-filter px-4 py-2 text-sm font-medium rounded-full transition-colors bg-blue-600 text-white"
             data-category="all"
           >
-            All Articles
+            Todos los Artículos
           </button>
           <a
             href="/personal-finance"
             class="px-4 py-2 text-sm font-medium rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
           >
-            Personal Finance
+            Finanzas Personales
           </a>
           <a
             href="/financial-solutions"
             class="px-4 py-2 text-sm font-medium rounded-full transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
           >
-            Financial Solutions
+            Soluciones Financieras
           </a>
         </div>
 

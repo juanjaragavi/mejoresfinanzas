@@ -98,7 +98,7 @@ const getAnimationDelay = (index: number) => index * 100;
               <input
                 type="text"
                 id="blog-search"
-                placeholder="Search posts..."
+                placeholder="Buscar artículos..."
                 class="w-full pl-10 pr-4 py-2 border border-border dark:border-darkmode-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent bg-body dark:bg-darkmode-body text-dark dark:text-darkmode-dark"
                 autocomplete="off"
               />
@@ -127,7 +127,7 @@ const getAnimationDelay = (index: number) => index * 100;
               id="category-filter"
               class="px-3 py-2 border border-border dark:border-darkmode-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent bg-body dark:bg-darkmode-body text-dark dark:text-darkmode-dark"
             >
-              <option value="">All Categories</option>
+              <option value="">Todas las Categorías</option>
               {allCategories.map((category) => (
                 <option value={category}>{category}</option>
               ))}
@@ -140,7 +140,7 @@ const getAnimationDelay = (index: number) => index * 100;
               id="tag-filter"
               class="px-3 py-2 border border-border dark:border-darkmode-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent bg-body dark:bg-darkmode-body text-dark dark:text-darkmode-dark"
             >
-              <option value="">All Tags</option>
+              <option value="">Todas las Etiquetas</option>
               {allTags.slice(0, 20).map((tag) => (
                 <option value={tag}>{tag}</option>
               ))}
@@ -153,10 +153,10 @@ const getAnimationDelay = (index: number) => index * 100;
               id="sort-filter"
               class="px-3 py-2 border border-border dark:border-darkmode-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent bg-body dark:bg-darkmode-body text-dark dark:text-darkmode-dark"
             >
-              <option value="date-desc">Latest First</option>
-              <option value="date-asc">Oldest First</option>
-              <option value="title-asc">Title A-Z</option>
-              <option value="title-desc">Title Z-A</option>
+              <option value="date-desc">Más Recientes Primero</option>
+              <option value="date-asc">Más Antiguos Primero</option>
+              <option value="title-asc">Título A-Z</option>
+              <option value="title-desc">Título Z-A</option>
             </select>
           )}
 
@@ -166,7 +166,7 @@ const getAnimationDelay = (index: number) => index * 100;
               id="clear-filters"
               class="px-4 py-2 text-sm font-medium text-primary hover:text-primary/80 border border-primary hover:border-primary/80 rounded-md transition-colors duration-200"
             >
-              Clear All
+              Limpiar Todo
             </button>
           )}
         </div>
@@ -184,11 +184,11 @@ const getAnimationDelay = (index: number) => index * 100;
 
     {/** View Toggle */}
     <div class="flex items-center space-x-2">
-      <span class="text-xs">View:</span>
+      <span class="text-xs">Vista:</span>
       <button
         id="grid-view"
         class="p-2 rounded hover:bg-theme-light dark:hover:bg-darkmode-theme-light transition-colors duration-200"
-        aria-label="Grid view"
+        aria-label="Vista de cuadrícula"
       >
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
           <path
@@ -199,7 +199,7 @@ const getAnimationDelay = (index: number) => index * 100;
       <button
         id="list-view"
         class="p-2 rounded hover:bg-theme-light dark:hover:bg-darkmode-theme-light transition-colors duration-200"
-        aria-label="List view"
+        aria-label="Vista de lista"
       >
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
           <path
@@ -217,7 +217,7 @@ const getAnimationDelay = (index: number) => index * 100;
       <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary">
       </div>
       <span class="ml-3 text-light dark:text-darkmode-light"
-        >Loading posts...</span
+        >Cargando artículos...</span
       >
     </div>
   </div>
@@ -238,10 +238,11 @@ const getAnimationDelay = (index: number) => index * 100;
       ></path>
     </svg>
     <h3 class="text-lg font-medium text-dark dark:text-darkmode-dark mb-2">
-      No posts found
+      No se encontraron artículos
     </h3>
     <p class="text-light dark:text-darkmode-light">
-      Try adjusting your search criteria or browse all posts.
+      Intenta ajustar tus criterios de búsqueda o navega por todos los
+      artículos.
     </p>
   </div>
 
@@ -281,7 +282,7 @@ const getAnimationDelay = (index: number) => index * 100;
           data-page={currentPage + 1}
           data-base-path={basePath}
         >
-          Load More Posts
+          Cargar Más Artículos
         </button>
       </div>
     )

@@ -15,7 +15,7 @@ for (let i = 1; i <= totalPages; i++) {
   totalPages > 1 && (
     <nav
       class="mt-12 mb-4 flex justify-center space-x-2"
-      aria-label="Pagination"
+      aria-label="Paginación"
     >
       {/* previous */}
       {hasPrevPage ? (
@@ -42,7 +42,7 @@ for (let i = 1; i <= totalPages; i++) {
               clip-rule="evenodd"
             />
           </svg>
-          <span>Previous</span>
+          <span>Anterior</span>
         </a>
       ) : (
         <span class="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-400 cursor-not-allowed">
@@ -59,7 +59,7 @@ for (let i = 1; i <= totalPages; i++) {
               clip-rule="evenodd"
             />
           </svg>
-          <span>Previous</span>
+          <span>Anterior</span>
         </span>
       )}
 
@@ -97,7 +97,7 @@ for (let i = 1; i <= totalPages; i++) {
           }/page/${currentPage + 1}`}
           class="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50"
         >
-          <span>Next</span>
+          <span>Siguiente</span>
           <svg
             class="-mr-1 ml-2 h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ for (let i = 1; i <= totalPages; i++) {
         </a>
       ) : (
         <span class="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-400 cursor-not-allowed">
-          <span>Next</span>
+          <span>Siguiente</span>
           <svg
             class="-mr-1 ml-2 h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"

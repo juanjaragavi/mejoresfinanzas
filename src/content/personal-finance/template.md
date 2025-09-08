@@ -1,6 +1,6 @@
 ---
 title: "Template"
-description: "Template file for new Personal Finance articles"
+description: "Archivo de plantilla para nuevos artículos de Finanzas Personales"
 draft: true
 categories: ["personal-finance"]
 tags: ["template"]
@@ -8,4 +8,4 @@ tags: ["template"]
 
 <!-- Use this file as a starting point for new articles. Do not publish. -->
 
-This is a placeholder article for the Personal Finance category. Replace the frontmatter and content with your own.
+Este es un artículo de marcador de posición para la categoría de Finanzas Personales. Reemplaza el frontmatter y el contenido con el tuyo propio.

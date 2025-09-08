@@ -1,4 +1,4 @@
 ---
-title: "Financial Solutions"
-description: "Comprehensive reviews and comparisons of credit cards, loans, and financial products to help you make informed decisions."
+title: "Soluciones Financieras"
+description: "Reseñas integrales y comparaciones de tarjetas de crédito, préstamos y productos financieros para ayudarte a tomar decisiones informadas."
 ---

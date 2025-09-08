@@ -10,4 +10,4 @@ draft: true
 color: "#333333"
 ---
 
-This is a placeholder article for the Financial Solutions category. Replace the frontmatter and content with your own.
+Este es un artículo de marcador de posición para la categoría de Soluciones Financieras. Reemplaza el frontmatter y el contenido con el tuyo propio.
