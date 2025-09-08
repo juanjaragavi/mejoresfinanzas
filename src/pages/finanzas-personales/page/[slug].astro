@@ -24,9 +24,15 @@ const totalPages = Math.ceil(sortedPosts.length / pagination);
 const start = (currentPage - 1) * pagination;
 const end = start + pagination;
 const currentPosts = sortedPosts.slice(start, end);
+
+// Set canonical URL for Spanish pagination
+const canonicalUrl = `${config.site.base_url}/finanzas-personales/page/${currentPage}`;
 ---
 
-<Base title={`Finanzas Personales (Página ${currentPage})`}>
+<Base
+  title={`Finanzas Personales (Página ${currentPage})`}
+  canonical={canonicalUrl}
+>
   <section class="section py-10">
     <div class="container">
       <PaginatedPosts

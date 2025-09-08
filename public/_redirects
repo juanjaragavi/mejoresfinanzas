@@ -1,4 +1,9 @@
-Redirects written: /Users/macbookpro/GitHub/mejoresfinanzas/public/_redirects lines: 67
+Redirects written: /Users/macbookpro/GitHub/mejoresfinanzas/public/_redirects lines: 69
+
+# Category page redirects to Spanish URLs
+/personal-finance /finanzas-personales 301
+/financial-solutions /soluciones-financieras 301
+
 inancieras/:splat 301
 /personal-finance/are-you-a-spender-or-a-saver-how-your-money-personality-shapes-your-financial-success /finanzas-personales/are-you-a-spender-or-a-saver-how-your-money-personality-shapes-your-personal-finance-success 301
 /personal-finance/setting-financial-goals-a-beginners-guide-to-planning-your-future /finanzas-personales/estableciendo-metas-financieras-una-guia-para-principiantes-para-planificar-tu-futuro 301

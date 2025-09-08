@@ -1,7 +1,9 @@
 ---
+import Base from "@/layouts/Base.astro";
 import PostSingle from "@/layouts/PostSingle.astro";
 import { getEntry, getCollection } from "astro:content";
 import { AstroError } from "astro/errors";
+import config from "@/config/config.json";
 
 export async function getStaticPaths() {
   const entries = await getCollection("financial-solutions");
@@ -15,6 +17,21 @@ try {
 } catch (e) {
   throw new AstroError(`Post not found: ${single}`);
 }
+
+if (!entry) {
+  throw new AstroError(`Post not found: ${single}`);
+}
+
+const { title, meta_title, description, image, date } = entry.data;
+const canonicalUrl = `${config.site.base_url}/soluciones-financieras/${single}`;
 ---
 
-<PostSingle post={entry} collection="financial-solutions" />
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+  canonical={canonicalUrl}
+>
+  <PostSingle post={entry} collection="financial-solutions" />
+</Base>
