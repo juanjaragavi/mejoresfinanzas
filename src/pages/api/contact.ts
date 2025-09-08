@@ -9,7 +9,7 @@ export const POST: APIRoute = async ({ request }) => {
     // Basic validation
     if (!name || !email || !subject || !message) {
       return new Response(
-        JSON.stringify({ message: "Missing required fields" }),
+        JSON.stringify({ message: "Faltan campos obligatorios" }),
         { status: 400, headers: { "Content-Type": "application/json" } },
       );
     }
@@ -17,22 +17,25 @@ export const POST: APIRoute = async ({ request }) => {
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return new Response(JSON.stringify({ message: "Invalid email format" }), {
-        status: 400,
-        headers: { "Content-Type": "application/json" },
-      });
+      return new Response(
+        JSON.stringify({ message: "Formato de correo electrónico no válido" }),
+        {
+          status: 400,
+          headers: { "Content-Type": "application/json" },
+        },
+      );
     }
 
     // Get environment variables
     const apiKey = import.meta.env.SENDGRID_API_KEY;
-    const senderEmail = import.meta.env.SENDER_EMAIL || "noreply@example.com";
+    const senderEmail = import.meta.env.SENDER_EMAIL || "noreply@mejoresfinanzas.com";
     const recipientEmail =
-      import.meta.env.RECIPIENT_EMAIL || "info@example.com";
+      import.meta.env.RECIPIENT_EMAIL || "info@mejoresfinanzas.com";
 
     if (!apiKey) {
-      console.error("Missing SendGrid API key");
+      console.error("Falta la clave de API de SendGrid");
       return new Response(
-        JSON.stringify({ message: "Server configuration error" }),
+        JSON.stringify({ message: "Error de configuración del servidor" }),
         { status: 500, headers: { "Content-Type": "application/json" } },
       );
     }
@@ -65,33 +68,33 @@ export const POST: APIRoute = async ({ request }) => {
       </head>
       <body>
         <div class="container">
-          <h1>New Contact Form Submission</h1>
-          <div class="info-row"><span class="label">Name:</span> ${name}</div>
-          <div class="info-row"><span class="label">Email:</span> ${email}</div>
-          <div class="info-row"><span class="label">Subject:</span> ${subject}</div>
+          <h1>Nuevo Envío de Formulario de Contacto</h1>
+          <div class="info-row"><span class="label">Nombre:</span> ${name}</div>
+          <div class="info-row"><span class="label">Correo Electrónico:</span> ${email}</div>
+          <div class="info-row"><span class="label">Asunto:</span> ${subject}</div>
           <div class="message-box">
-            <span class="label">Message:</span>
+            <span class="label">Mensaje:</span>
             <p>${message.replace(/\n/g, "<br>")}</p>
           </div>
-          <div class="footer">This email was sent from the site contact form.</div>
+          <div class="footer">Este correo fue enviado desde el formulario de contacto del sitio.</div>
         </div>
       </body>
       </html>
     `;
 
     const mailOptions = {
-      from: `"Site Contact" <${senderEmail}>`,
+      from: `"Contacto del Sitio" <${senderEmail}>`,
       to: recipientEmail,
       replyTo: email,
-      subject: `Contact Form: ${subject}`,
+      subject: `Formulario de Contacto: ${subject}`,
       text: `
-        You received a new message from your contact form:
+        Recibiste un nuevo mensaje de tu formulario de contacto:
 
-        Name: ${name}
-        Email: ${email}
-        Subject: ${subject}
+        Nombre: ${name}
+        Correo Electrónico: ${email}
+        Asunto: ${subject}
 
-        Message:
+        Mensaje:
         ${message}
       `,
       html: htmlMessage,
@@ -101,14 +104,17 @@ export const POST: APIRoute = async ({ request }) => {
     await transporter.sendMail(mailOptions);
 
     return new Response(
-      JSON.stringify({ message: "Message sent successfully!" }),
+      JSON.stringify({ message: "¡Mensaje enviado con éxito!" }),
       { status: 200, headers: { "Content-Type": "application/json" } },
     );
   } catch (error) {
-    console.error("Error processing contact form:", error);
-    return new Response(JSON.stringify({ message: "Failed to send message" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+    console.error("Error al procesar el formulario de contacto:", error);
+    return new Response(
+      JSON.stringify({ message: "Error al enviar el mensaje" }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      },
+    );
   }
 };

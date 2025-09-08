@@ -19,18 +19,18 @@
   },
   "nav_button": {
     "enable": true,
-    "label": "Get Started",
+    "label": "Empezar",
     "link": "/blog"
   },
   "params": {
     "contact_form_action": "",
     "tag_manager_id": "GTM-MP4CPT97",
-    "footer_content": "ALL RIGHTS RESERVED. REPRODUCTION IN WHOLE OR IN PART BY ANY MEANS OR FORM WITHOUT WRITTEN AUTHORIZATION IS PROHIBITED.",
+    "footer_content": "TODOS LOS DERECHOS RESERVADOS. SE PROHÍBE LA REPRODUCCIÓN TOTAL O PARCIAL POR CUALQUIER MEDIO O FORMA SIN AUTORIZACIÓN ESCRITA.",
     "copyright": "© Copyright 2025"
   },
   "metadata": {
-    "meta_author": "MejoresFinanzas Team",
+    "meta_author": "Equipo de MejoresFinanzas",
     "meta_image": "/images/og-image.png",
-    "meta_description": "MejoresFinanzas is a comprehensive financial wellness blog platform with unbiased guidance, credit card recommendations, and practical tools."
+    "meta_description": "MejoresFinanzas es una plataforma integral de bienestar financiero con orientación imparcial, recomendaciones de tarjetas de crédito y herramientas prácticas."
   }
 }

@@ -1,7 +1,7 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
@@ -9,49 +9,49 @@
       "url": "/blog"
     },
     {
-      "name": "Personal Finance",
+      "name": "Finanzas Personales",
       "url": "/personal-finance"
     },
     {
-      "name": "Financial Solutions",
+      "name": "Soluciones Financieras",
       "url": "/financial-solutions"
     },
     {
-      "name": "About Us",
+      "name": "Sobre Nosotros",
       "url": "/about"
     },
     {
-      "name": "Contact",
+      "name": "Contacto",
       "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "menu": [
         {
-          "text": "About",
+          "text": "Sobre Nosotros",
           "url": "/about"
         },
         {
-          "text": "Contact Us",
+          "text": "Contáctanos",
           "url": "/contact"
         }
       ]
     },
     {
-      "name": "Resources",
+      "name": "Recursos",
       "menu": [
         {
-          "text": "Financial Guides",
+          "text": "Guías Financieras",
           "url": "/blog"
         },
         {
-          "text": "Credit Card Reviews",
+          "text": "Reseñas de Tarjetas de Crédito",
           "url": "/blog"
         },
         {
-          "text": "Budgeting Tips",
+          "text": "Consejos de Presupuesto",
           "url": "/blog"
         }
       ]
@@ -60,15 +60,15 @@
       "name": "Legal",
       "menu": [
         {
-          "text": "Privacy Policy",
+          "text": "Política de Privacidad",
           "url": "/privacy-policy"
         },
         {
-          "text": "Terms & Conditions",
+          "text": "Términos y Condiciones",
           "url": "/terms-conditions"
         },
         {
-          "text": "Cookie Policy",
+          "text": "Política de Cookies",
           "url": "/cookie-policy"
         }
       ]

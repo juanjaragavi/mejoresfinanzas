@@ -12,7 +12,7 @@ export const BRAND = {
   name: "MejoresFinanzas",
 
   // Primary public domain (used in SEO, sitemap, robots, etc.)
-  // Example: "example.com" (no protocol, no trailing slash)
+  // Example: "mejoresfinanzas.com" (no protocol, no trailing slash)
   domain: "mejoresfinanzas.com",
 
   // Short tagline or mission statement (text only)

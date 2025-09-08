@@ -44,7 +44,7 @@ All URLs include complete sitemap metadata:
 
 ```xml
 <url>
-  <loc>https://example.com/quiz/</loc>
+  <loc>https://mejoresfinanzas.com/quiz/</loc>
   <lastmod>2025-07-17T00:00:00.000Z</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.95</priority>
@@ -86,7 +86,7 @@ All URLs include complete sitemap metadata:
 
 - **Sitemap Index**: `/dist/sitemap-index.xml`
 - **Main Sitemap**: `/dist/sitemap-0.xml`
-- **Public Access**: `https://example.com/sitemap-0.xml`
+- **Public Access**: `https://mejoresfinanzas.com/sitemap-0.xml`
 
 ### **Advanced Features**
 
@@ -209,7 +209,7 @@ Based on priority distribution, the sitemap optimizes for:
 
 ```bash
 # Verify sitemap accessibility
-curl -I https://example.com/sitemap-0.xml
+curl -I https://mejoresfinanzas.com/sitemap-0.xml
 
 # Check XML validation
 xmllint --noout /path/to/sitemap-0.xml

@@ -8,7 +8,7 @@ export const POST: APIRoute = async ({ request }) => {
     // Basic validation
     if (!email || !name || !acceptedTerms) {
       return new Response(
-        JSON.stringify({ message: "Missing required fields" }),
+        JSON.stringify({ message: "Faltan campos obligatorios" }),
         { status: 400, headers: { "Content-Type": "application/json" } },
       );
     }
@@ -17,9 +17,9 @@ export const POST: APIRoute = async ({ request }) => {
     const apiUrl = import.meta.env.KIT_API_URL;
 
     if (!apiKey || !apiUrl) {
-      console.error("Missing ConvertKit API credentials");
+      console.error("Faltan las credenciales de la API de ConvertKit");
       return new Response(
-        JSON.stringify({ message: "Server configuration error" }),
+        JSON.stringify({ message: "Error de configuración del servidor" }),
         { status: 500, headers: { "Content-Type": "application/json" } },
       );
     }
@@ -34,7 +34,7 @@ export const POST: APIRoute = async ({ request }) => {
         cual_es_tu_ingreso_mensual: income,
         date_created: new Date().toISOString().slice(0, 19).replace("T", " "),
         pais: "Estados Unidos",
-        marca: "Brand",
+        marca: "Mejores Finanzas",
         que_es_lo_que_mas_importante_en_una_tarjeta_de_credito: preference,
         quiz_tarjetas: "SI",
         utm_adgroup: "utm_adgroup",
@@ -57,17 +57,17 @@ export const POST: APIRoute = async ({ request }) => {
 
     if (!response.ok) {
       const errorBody = await response.json();
-      console.error("ConvertKit API Error:", errorBody);
-      throw new Error("Failed to subscribe user");
+      console.error("Error de la API de ConvertKit:", errorBody);
+      throw new Error("Error al suscribir al usuario");
     }
 
-    return new Response(
-      JSON.stringify({ message: "Successfully subscribed!" }),
-      { status: 200, headers: { "Content-Type": "application/json" } },
-    );
+    return new Response(JSON.stringify({ message: "¡Suscrito con éxito!" }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (error) {
-    console.error("Error processing quiz submission:", error);
-    return new Response(JSON.stringify({ message: "Failed to subscribe" }), {
+    console.error("Error al procesar el envío del cuestionario:", error);
+    return new Response(JSON.stringify({ message: "Error al suscribir" }), {
       status: 500,
       headers: { "Content-Type": "application/json" },
     });

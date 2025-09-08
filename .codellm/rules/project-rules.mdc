@@ -3,7 +3,7 @@
 ## Project Overview
 
 **Project Name:** Financial Blog Template
-**Domain:** example.com (replace via src/config/brand.ts and config.json)
+**Domain:** mejoresfinanzas.com (replace via src/config/brand.ts and config.json)
 **Tagline:** A starter template for financial content websites
 **Framework:** Astro v5.7.14
 **Base Theme:** Originally forked from Bigspring Light Astro v3.1.0, extensively customized
@@ -198,7 +198,7 @@ When creating new content:
    - Related context
 3. Review sitemap to avoid duplication
 4. Use US English conventions (en-US)
-5. Internal links must point to your configured domain (default: example.com)
+5. Internal links must point to your configured domain (default: mejoresfinanzas.com)
 
 #### Content Guidelines
 - Length: 750-2000 words
@@ -286,7 +286,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 ```
 
 ### Environment Configuration
-- Production URL: https://example.com
+- Production URL: https://mejoresfinanzas.com
 - Google Tag Manager ID: GTM-MP4CPT97
 - Contact form endpoint: (unconfigured - needs setup)
 

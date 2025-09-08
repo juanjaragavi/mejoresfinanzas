@@ -1,13 +1,13 @@
 ---
-title: "Contact Us"
-description: "Get in touch for financial guidance and support"
+title: "Contáctenos"
+description: "Póngase en contacto para obtener orientación y apoyo financiero"
 draft: false
 info:
-  title: "Why you should contact us!"
-  description: "Have questions about personal finance, budgeting, or our financial recommendations? Our team is here to help you make informed financial decisions. Reach out to us for unbiased financial guidance tailored to your needs."
+  title: "¡Por qué debería contactarnos!"
+  description: "¿Tiene preguntas sobre finanzas personales, presupuestos o nuestras recomendaciones financieras? Nuestro equipo está aquí para ayudarlo a tomar decisiones financieras informadas. Contáctenos para obtener orientación financiera imparcial y adaptada a sus necesidades."
   contacts:
-    - "Mail: info@example.com"
-    - "Address: PANAMA, PANAMA CITY, AV. AQUILINO DE LA GUARDIA, OCEAN BUSINESS PLAZA BUILDING, FLOOR 12"
+    - "Correo: info@mejoresfinanzas.com"
+    - "Dirección: PANAMÁ, CIUDAD DE PANAMÁ, AV. AQUILINO DE LA GUARDIA, EDIFICIO OCEAN BUSINESS PLAZA, PISO 12"
 ---
 
-We aim to respond within 2 business days.
+Nuestro objetivo es responder en un plazo de 2 días hábiles.

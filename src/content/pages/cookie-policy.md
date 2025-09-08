@@ -1,86 +1,88 @@
 ---
-title: "Cookie Policy"
-description: "Cookie Policy — TopNetworks Inc."
+title: "Política de Cookies"
+description: "Política de Cookies — TopNetworks Inc."
 draft: false
 ---
 
-> Note: The legal entity name is preserved. TopNetworks Inc. remains unchanged on legal pages.
+> Nota: El nombre de la entidad legal se conserva. TopNetworks Inc. permanece sin cambios en las páginas legales.
 
-**Effective Date:** April 6, 2025  
-**Last Updated:** May 24, 2025
+**Fecha de Entrada en Vigor:** 6 de abril de 2025  
+**Última Actualización:** 24 de mayo de 2025
 
-This Cookie Policy explains how **TopNetworks Inc.** ("we", "us", or "our") uses cookies and similar technologies on our website (the "Site"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+Esta Política de Cookies explica cómo **TopNetworks Inc.** ("nosotros", "nos" o "nuestro") utiliza cookies y tecnologías similares en nuestro sitio web (el "Sitio"). Explica qué son estas tecnologías y por qué las utilizamos, así como tus derechos para controlar nuestro uso de ellas.
 
-This policy should be read together with our [Privacy Policy](/privacy-policy), which explains how we use personal information.
+Esta política debe leerse junto con nuestra [Política de Privacidad](/privacy-policy), que explica cómo utilizamos la información personal.
 
-## 1. What Are Cookies?
+## 1. ¿Qué son las Cookies?
 
-Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
+Las cookies son pequeños archivos de datos que se colocan en tu computadora o dispositivo móvil cuando visitas un sitio web. Las cookies son ampliamente utilizadas por los propietarios de sitios web para que sus sitios funcionen, o para que funcionen de manera más eficiente, así como para proporcionar información de informes.
 
-Cookies set by the website owner (in this case, **TopNetworks Inc.**) are called "first-party cookies". Cookies set by parties other than the website owner are called "third-party cookies". Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites.
+Las cookies establecidas por el propietario del sitio web (en este caso, **TopNetworks Inc.**) se denominan "cookies de origen". Las cookies establecidas por partes distintas del propietario del sitio web se denominan "cookies de terceros". Las cookies de terceros permiten que se proporcionen características o funcionalidades de terceros en o a través del sitio web (por ejemplo, publicidad, contenido interactivo y análisis). Las partes que establecen estas cookies de terceros pueden reconocer tu computadora tanto cuando visita el sitio web en cuestión como cuando visita otros sitios web determinados.
 
-## 2. Why Do We Use Cookies?
+## 2. ¿Por qué utilizamos Cookies?
 
-We use first-party and third-party cookies for several reasons. Some cookies are required for technical reasons in order for our Site to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Site. Third parties serve cookies through our Site for advertising, analytics, and other purposes. This is described in more detail below.
+Utilizamos cookies de origen y de terceros por varias razones. Algunas cookies son necesarias por razones técnicas para que nuestro Sitio funcione, y nos referimos a ellas como cookies "esenciales" o "estrictamente necesarias". Otras cookies también nos permiten rastrear y dirigir los intereses de nuestros usuarios para mejorar la experiencia en nuestro Sitio. Terceros sirven cookies a través de nuestro Sitio para publicidad, análisis y otros fines. Esto se describe con más detalle a continuación.
 
-## 3. Types of Cookies We Use
+## 3. Tipos de Cookies que Utilizamos
 
-The specific types of first and third-party cookies served through our Site and the purposes they perform are described below:
+Los tipos específicos de cookies de origen y de terceros que se sirven a través de nuestro Sitio y los fines que desempeñan se describen a continuación:
 
-### Strictly Necessary Cookies
+### Cookies Estrictamente Necesarias
 
-These cookies are essential to provide you with services available through our Site and to enable you to use some of its features, such as access to secure areas. Because these cookies are strictly necessary to deliver the Site to you, you cannot refuse them without impacting how our Site functions.
+Estas cookies son esenciales para proporcionarte los servicios disponibles a través de nuestro Sitio y para permitirte usar algunas de sus características, como el acceso a áreas seguras. Debido a que estas cookies son estrictamente necesarias para entregarte el Sitio, no puedes rechazarlas sin afectar el funcionamiento de nuestro Sitio.
 
-### Performance and Functionality Cookies
+### Cookies de Rendimiento y Funcionalidad
 
-These cookies are used to enhance the performance and functionality of our Site but are non-essential to its use. However, without these cookies, certain functionality (like remembering your preferences) may become unavailable.
+Estas cookies se utilizan para mejorar el rendimiento y la funcionalidad de nuestro Sitio, pero no son esenciales para su uso. Sin embargo, sin estas cookies, ciertas funcionalidades (como recordar tus preferencias) pueden dejar de estar disponibles.
 
-### Analytics and Customization Cookies
+### Cookies de Análisis y Personalización
 
-These cookies collect information that is used either in aggregate form to help us understand how our Site is being used or how effective our marketing campaigns are, or to help us customize our Site for you. We primarily use Google Analytics for this purpose.
+Estas cookies recopilan información que se utiliza en forma agregada para ayudarnos a comprender cómo se está utilizando nuestro Sitio o cuán efectivas son nuestras campañas de marketing, o para ayudarnos a personalizar nuestro Sitio para ti. Utilizamos principalmente Google Analytics para este propósito.
 
-### Advertising Cookies
+### Cookies de Publicidad
 
-These cookies are used to make advertising messages more relevant to you. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed for advertisers, and in some cases selecting advertisements that are based on your interests. We use Google AdSense, which employs cookies (like the DART cookie) to serve ads based on your visit to our Site and other sites on the Internet.
+Estas cookies se utilizan para hacer que los mensajes publicitarios sean más relevantes para ti. Realizan funciones como evitar que el mismo anuncio vuelva a aparecer continuamente, garantizar que los anuncios se muestren correctamente para los anunciantes y, en algunos casos, seleccionar anuncios que se basen en tus intereses. Utilizamos Google AdSense, que emplea cookies (como la cookie DART) para servir anuncios basados en tu visita a nuestro Sitio y otros sitios en Internet.
 
-## 4. How Can You Control Cookies?
+## 4. ¿Cómo puedes controlar las Cookies?
 
-You have the right to decide whether to accept or reject cookies.
+Tienes derecho a decidir si aceptas o rechazas las cookies.
 
-### Browser Controls
+### Controles del Navegador
 
-You can set or amend your web browser controls to accept or refuse cookies. If you choose to reject cookies, you may still use our Site though your access to some functionality and areas may be restricted. As the means by which you can refuse cookies through your web browser controls vary from browser-to-browser, you should visit your browser's help menu for more information.
+Puedes configurar o modificar los controles de tu navegador web para aceptar o rechazar cookies. Si eliges rechazar las cookies, aún puedes usar nuestro Sitio, aunque tu acceso a algunas funcionalidades y áreas puede estar restringido. Como los medios por los cuales puedes rechazar las cookies a través de los controles de tu navegador web varían de un navegador a otro, debes visitar el menú de ayuda de tu navegador para obtener más información.
 
-### Opting Out of Targeted Advertising
+### Exclusión de la Publicidad Dirigida
 
-Many advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit:
+Muchas redes publicitarias te ofrecen una forma de optar por no recibir publicidad dirigida. Si deseas obtener más información, visita:
 
 - [http://www.aboutads.info/choices/](http://www.aboutads.info/choices/)
 - [http://www.youronlinechoices.com](http://www.youronlinechoices.com)
 
-You can opt out of Google's use of the DART cookie by visiting the Google Ad Preferences page: [http://www.google.com/ads/preferences/](http://www.google.com/ads/preferences/).
+Puedes optar por no participar en el uso de la cookie DART de Google visitando la página de Preferencias de Anuncios de Google: [http://www.google.com/ads/preferences/](http://www.google.com/ads/preferences/).
 
-### Cookie Consent Tool
+### Herramienta de Consentimiento de Cookies
 
-Upon your first visit to our Site, you may be presented with a cookie banner requesting your consent for non-essential cookies. You can manage your preferences through this tool at any time (if implemented).
+En tu primera visita a nuestro Sitio, es posible que se te presente un banner de cookies solicitando tu consentimiento para las cookies no esenciales. Puedes gestionar tus preferencias a través de esta herramienta en cualquier momento (si está implementada).
 
-## 5. Third-Party Cookies
+## 5. Cookies de Terceros
 
-As mentioned, third parties like Google Analytics and Google AdSense may set cookies when you visit our Site. These companies may use information about your visits to this and other websites in order to provide relevant advertisements about goods and services that you may be interested in. They may also employ technology that is used to measure the effectiveness of advertisements.
+Como se mencionó, terceros como Google Analytics y Google AdSense pueden establecer cookies cuando visitas nuestro Sitio. Estas empresas pueden utilizar información sobre tus visitas a este y otros sitios web para proporcionar anuncios relevantes sobre bienes y servicios que te puedan interesar. También pueden emplear tecnología que se utiliza para medir la efectividad de los anuncios.
 
-For more information on how Google uses data, please visit [Google's Privacy & Terms site](https://policies.google.com/technologies/partner-sites).
+Para obtener más información sobre cómo Google utiliza los datos, visita el sitio de [Privacidad y Términos de Google](https://policies.google.com/technologies/partner-sites).
 
-## 6. Updates to This Cookie Policy
+## 6. Actualizaciones de esta Política de Cookies
 
-We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal, or regulatory reasons. Please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.
+Podemos actualizar esta Política de Cookies de vez en cuando para reflejar, por ejemplo, cambios en las cookies que utilizamos o por otras razones operativas, legales o reglamentarias. Por lo tanto, vuelve a visitar esta Política de Cookies con regularidad para mantenerte informado sobre nuestro uso de cookies y tecnologías relacionadas.
 
-The date at the top of this Cookie Policy indicates when it was last updated.
+La fecha en la parte superior de esta Política de Cookies indica cuándo se actualizó por última vez.
 
-## 7. Where Can You Get Further Information?
+## 7. ¿Dónde puedes obtener más información?
 
-If you have any questions about our use of cookies or other technologies, please email us at [info@example.com](mailto:info@example.com) or contact us by post at:
+Si tienes alguna pregunta sobre nuestro uso de cookies u otras tecnologías, envíanos un correo electrónico a [info@mejoresfinanzas.com](mailto:info@mejoresfinanzas.com) o contáctanos por correo postal en:
 
 ## TopNetworks Inc
 
-- **Email:** <info@example.com>
-- **Address:** PANAMA, PANAMA CITY, AV. AQUILINO DE LA GUARDIA, OCEAN BUSINESS PLAZA BUILDING, FLOOR 12
+- **Correo Electrónico:** <info@mejoresfinanzas.com>
+- **Dirección:** PANAMA, PANAMA CITY, AV. AQUILINO DE LA GUARDIA, OCEAN BUSINESS PLAZA BUILDING, FLOOR 12
+
+---

@@ -7,12 +7,12 @@ export default function Step1({ formData, updateFormData }) {
   const [selected, setSelected] = useState(formData.preference);
 
   const options = [
-    { id: "A", label: "High credit limit" },
-    { id: "B", label: "Instant approval" },
-    { id: "C", label: "No credit check" },
-    { id: "D", label: "No annual fee" },
-    { id: "E", label: "Rewards and cashback" },
-    { id: "F", label: "Travel benefits" },
+    { id: "A", label: "Límite de crédito alto" },
+    { id: "B", label: "Aprobación instantánea" },
+    { id: "C", label: "Sin verificación de crédito" },
+    { id: "D", label: "Sin cuota anual" },
+    { id: "E", label: "Recompensas y cashback" },
+    { id: "F", label: "Beneficios de viaje" },
   ];
 
   const handleSelect = (id) => {
@@ -25,7 +25,7 @@ export default function Step1({ formData, updateFormData }) {
       <ProgressIndicator step={1} />
       <div className="text-left">
         <h2 className="text-md font-bold text-left text-gray-950">
-          Find Your Perfect Credit Card
+          Encuentra Tu Tarjeta de Crédito Perfecta
         </h2>
       </div>
 
@@ -35,7 +35,7 @@ export default function Step1({ formData, updateFormData }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        What's most important to you in a credit card?
+        ¿Qué es lo más importante para ti en una tarjeta de crédito?
       </motion.h1>
 
       <motion.div
@@ -59,7 +59,7 @@ export default function Step1({ formData, updateFormData }) {
 
       <div className="mt-10">
         <p className="text-left text-xs text-gray-500">
-          © 2025. Your trusted financial companion.
+          © 2025. Tu compañero financiero de confianza.
         </p>
       </div>
     </div>

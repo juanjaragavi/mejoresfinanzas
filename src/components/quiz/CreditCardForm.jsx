@@ -33,12 +33,12 @@ export default function CreditCardForm() {
 
   const getPreferenceText = (id) => {
     const options = [
-      { id: "A", label: "High credit limit" },
-      { id: "B", label: "Instant approval" },
-      { id: "C", label: "No credit check" },
-      { id: "D", label: "No annual fee" },
-      { id: "E", label: "Rewards and cashback" },
-      { id: "F", label: "Travel benefits" },
+      { id: "A", label: "Límite de crédito alto" },
+      { id: "B", label: "Aprobación instantánea" },
+      { id: "C", label: "Sin verificación de crédito" },
+      { id: "D", label: "Sin cuota anual" },
+      { id: "E", label: "Recompensas y cashback" },
+      { id: "F", label: "Beneficios de viaje" },
     ];
     const option = options.find((opt) => opt.id === id);
     return option ? option.label : "";
@@ -46,12 +46,12 @@ export default function CreditCardForm() {
 
   const getIncomeText = (id) => {
     const options = [
-      { id: "A", label: "Under $25,000" },
+      { id: "A", label: "Menos de $25,000" },
       { id: "B", label: "$25,000 - $50,000" },
       { id: "C", label: "$50,000 - $75,000" },
       { id: "D", label: "$75,000 - $100,000" },
       { id: "E", label: "$100,000 - $150,000" },
-      { id: "F", label: "Over $150,000" },
+      { id: "F", label: "Más de $150,000" },
     ];
     const option = options.find((opt) => opt.id === id);
     return option ? option.label : "";
@@ -80,7 +80,10 @@ export default function CreditCardForm() {
           });
         }
       } catch (error) {
-        console.error("Error parsing saved user data:", error);
+        console.error(
+          "Error al analizar los datos de usuario guardados:",
+          error,
+        );
       }
     }
   }, []);
@@ -116,7 +119,7 @@ export default function CreditCardForm() {
 
   const handleSubmit = async (e) => {
     e?.preventDefault();
-    console.log("Form submitted with data:", formData);
+    console.log("Formulario enviado con datos:", formData);
 
     const setCookie = (name, value, days) => {
       const expires = new Date();
@@ -134,10 +137,10 @@ export default function CreditCardForm() {
         name: formData.name,
         acceptedTerms: formData.receiveMessages,
         timestamp: new Date().toISOString(),
-        source: "Credit Card Quiz",
+        source: "Cuestionario de Tarjeta de Crédito",
       };
 
-      console.log("Quiz data to be sent:", quizData);
+      console.log("Datos del cuestionario a enviar:", quizData);
 
       const response = await fetch("/api/quiz-submission", {
         method: "POST",
@@ -148,10 +151,10 @@ export default function CreditCardForm() {
       });
 
       if (!response.ok) {
-        throw new Error("Failed to submit quiz");
+        throw new Error("Error al enviar el cuestionario");
       }
     } catch (error) {
-      console.error("Error submitting quiz:", error);
+      console.error("Error al enviar el cuestionario:", error);
     } finally {
       // Set cookies to indicate quiz completion and user registration
       setCookie(COOKIE_NAMES.QUIZ_COMPLETED, "true", 30);
@@ -182,12 +185,12 @@ export default function CreditCardForm() {
         <h1 className="text-2xl font-bold text-black flex items-center gap-3">
           <img
             src="/images/favicon.png"
-            alt="Site"
+            alt="Sitio"
             className="w-7 h-7"
             loading="eager"
             decoding="async"
           />
-          Credit Card Quiz
+          Cuestionario de Tarjeta de Crédito
         </h1>
       </div>
 
@@ -232,11 +235,11 @@ export default function CreditCardForm() {
               />
             </div>
             <div className="text-left text-sm text-gray-600">
-              {progress}% complete
-              {progress < 100 ? ", keep going!" : "!"}
+              {progress}% completado
+              {progress < 100 ? ", ¡sigue adelante!" : "!"}
               {isRegisteredUser && step === 2 && (
                 <div className="text-xs text-primary mt-1">
-                  Welcome back! We'll use your saved information.
+                  ¡Bienvenido de nuevo! Usaremos tu información guardada.
                 </div>
               )}
             </div>

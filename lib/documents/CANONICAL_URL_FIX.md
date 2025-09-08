@@ -53,9 +53,9 @@ Disallow: /23062212598/
 
 | URL             | Canonical URL                      |
 | --------------- | ---------------------------------- |
-| `/blog/page/12` | `https://example.com/blog/page/12` |
-| `/blog/page/3`  | `https://example.com/blog/page/3`  |
-| `/blog/page/4`  | `https://example.com/blog/page/4`  |
+| `/blog/page/12` | `https://mejoresfinanzas.com/blog/page/12` |
+| `/blog/page/3`  | `https://mejoresfinanzas.com/blog/page/3`  |
+| `/blog/page/4`  | `https://mejoresfinanzas.com/blog/page/4`  |
 
 ### Ad Network URLs (Now Blocked)
 

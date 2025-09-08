@@ -1,158 +1,158 @@
 ---
-title: "Privacy Policy"
-description: "Privacy Policy — TopNetworks Inc."
+title: "Política de Privacidad"
+description: "Política de Privacidad — TopNetworks Inc."
 draft: false
 ---
 
-> Note: The legal entity name is preserved. TopNetworks Inc. remains unchanged on legal pages.
+> Nota: El nombre de la entidad legal se conserva. TopNetworks Inc. permanece sin cambios en las páginas legales.
 
-**Effective Date:** January 10, 2025  
-**Last Updated:** May 24, 2025
+**Fecha de Entrada en Vigor:** 10 de enero de 2025  
+**Última Actualización:** 24 de mayo de 2025
 
-**TopNetworks Inc.** ("we", "our" or "us") is committed to protecting your personal information. This Privacy Policy describes how we collect, use and share your data, the security measures we employ, and the rights you have over your personal information. We recommend that you read this policy carefully.
+**TopNetworks Inc.** ("nosotros", "nuestro") se compromete a proteger tu información personal. Esta Política de Privacidad describe cómo recopilamos, usamos y compartimos tus datos, las medidas de seguridad que empleamos y los derechos que tienes sobre tu información personal. Te recomendamos que leas esta política detenidamente.
 
-## 1. Who We Are
+## 1. Quiénes Somos
 
-**TopNetworks Inc.** operates this platform (the "Platform" or "Site"), a financial information and product recommendation platform. Our mission is to provide users with personalized content about financial services and products.
+**TopNetworks Inc.** opera esta plataforma (la "Plataforma" o "Sitio"), una plataforma de información financiera y recomendación de productos. Nuestra misión es proporcionar a los usuarios contenido personalizado sobre servicios y productos financieros.
 
-If you have any questions about this Privacy Policy or how we handle your data, please contact us at [info@example.com](mailto:info@example.com).
+Si tienes alguna pregunta sobre esta Política de Privacidad o cómo manejamos tus datos, por favor contáctanos en [info@mejoresfinanzas.com](mailto:info@mejoresfinanzas.com).
 
-## 2. Types of Information We Collect
+## 2. Tipos de Información que Recopilamos
 
-We collect various types of information from and about users of our Site:
+Recopilamos varios tipos de información de y sobre los usuarios de nuestro Sitio:
 
-- **Personal Identification Information:** Such as name, email address, contact information, date of birth, and government identification, which you provide directly.
-- **Financial Information:** Including income, credit status, and employment information, necessary to personalize our financial recommendations.
-- **Device and Browsing Information:** IP address, browser type, operating system, device type, and browsing behavior on our Site.
-- **Usage Data:** Details about interactions on our Site, including pages visited, links clicked, and other engagement metrics.
-- **Geolocation Data:** Location information if you have given your consent through your device settings.
+- **Información de Identificación Personal:** Como nombre, dirección de correo electrónico, información de contacto, fecha de nacimiento e identificación gubernamental, que proporcionas directamente.
+- **Información Financiera:** Incluyendo ingresos, estado crediticio e información laboral, necesaria para personalizar nuestras recomendaciones financieras.
+- **Información del Dispositivo y de Navegación:** Dirección IP, tipo de navegador, sistema operativo, tipo de dispositivo y comportamiento de navegación en nuestro Sitio.
+- **Datos de Uso:** Detalles sobre las interacciones en nuestro Sitio, incluyendo páginas visitadas, enlaces pulsados y otras métricas de participación.
+- **Datos de Geolocalización:** Información de ubicación si has dado tu consentimiento a través de la configuración de tu dispositivo.
 
-## 3. How We Collect Information
+## 3. Cómo Recopilamos la Información
 
-We collect information in the following ways:
+Recopilamos información de las siguientes maneras:
 
-- **Directly from You:** Information you provide when completing forms, subscribing to newsletters, or contacting us.
-- **Automatically Through Technology:** We use cookies, web beacons, and other tracking technologies to automatically collect information as you navigate the Site.
-- **From External Partners:** We may receive information from partners for marketing, legal compliance, and enhanced services.
+- **Directamente de Ti:** Información que proporcionas al completar formularios, suscribirte a boletines informativos o contactarnos.
+- **Automáticamente a Través de la Tecnología:** Usamos cookies, balizas web y otras tecnologías de seguimiento para recopilar información automáticamente mientras navegas por el Sitio.
+- **De Socios Externos:** Podemos recibir información de socios para marketing, cumplimiento legal y servicios mejorados.
 
-## 4. How We Use Your Information
+## 4. Cómo Usamos Tu Información
 
-We use the information we collect for various purposes, including:
+Usamos la información que recopilamos para diversos fines, incluyendo:
 
-- Providing and maintaining our services
-- Processing and fulfilling your requests for information or services
-- Personalizing your experience on our Site
-- Communicating with you about our services, updates, and promotional offers
-- Improving our website, products, and services
-- Conducting analysis and research
-- Protecting the security and integrity of our Site
-- Complying with legal obligations
+- Proporcionar y mantener nuestros servicios
+- Procesar y cumplir con tus solicitudes de información o servicios
+- Personalizar tu experiencia en nuestro Sitio
+- Comunicarnos contigo sobre nuestros servicios, actualizaciones y ofertas promocionales
+- Mejorar nuestro sitio web, productos y servicios
+- Realizar análisis e investigaciones
+- Proteger la seguridad e integridad de nuestro Sitio
+- Cumplir con las obligaciones legales
 
-## 5. Information Sharing and Disclosure
+## 5. Intercambio y Divulgación de Información
 
-Your information may be shared with:
+Tu información puede ser compartida con:
 
-- **Service Providers:** Third-party vendors who perform services on our behalf
-- **Financial Partners:** Financial institutions that offer products or services through our Site
-- **Legal and Regulatory Authorities:** When required by law, court order, or government regulation
-- **Corporate Affiliates:** Our parent company, subsidiaries, and affiliates
-- **Business Transfers:** In connection with any merger, sale of company assets, financing, or acquisition
+- **Proveedores de Servicios:** Vendedores de terceros que realizan servicios en nuestro nombre.
+- **Socios Financieros:** Instituciones financieras que ofrecen productos o servicios a través de nuestro Sitio.
+- **Autoridades Legales y Reguladoras:** Cuando lo exija la ley, una orden judicial o una regulación gubernamental.
+- **Afiliados Corporativos:** Nuestra empresa matriz, subsidiarias y afiliadas.
+- **Transferencias de Negocios:** En relación con cualquier fusión, venta de activos de la empresa, financiación o adquisición.
 
-We do not sell your personal information to third parties for their marketing purposes without your explicit consent.
+No vendemos tu información personal a terceros para sus fines de marketing sin tu consentimiento explícito.
 
-## 6. Activity Log / Collected Data
+## 6. Registro de Actividad / Datos Recopilados
 
-We may record your activities on our Site to create logs (records of activities), which may include your IP address, the pages accessed, actions performed, dates and times of actions, and information about your device, such as operating system version, browser type, and geolocation.
+Podemos registrar tus actividades en nuestro Sitio para crear registros (registros de actividades), que pueden incluir tu dirección IP, las páginas a las que has accedido, las acciones realizadas, las fechas y horas de las acciones, e información sobre tu dispositivo, como la versión del sistema operativo, el tipo de navegador y la geolocalización.
 
-We may also use certain proprietary or third-party technologies to monitor activity on our Site, including:
+También podemos utilizar ciertas tecnologías propias o de terceros para monitorear la actividad en nuestro Sitio, incluyendo:
 
-- **Cookies:** These internet files temporarily store information about your browsing, such as pages visited and preferences, to improve your experience. **TopNetworks Inc.** and third-party partners may use cookies to enhance personalization. You may control cookies in your browser settings, but disabling them may affect your experience.
-- **Web Beacons:** These techniques allow us to identify and analyze website visit behaviors across different platforms and devices.
-- **Google AdSense Cookie Dart:** We may display ads through Google AdSense. This uses the DART cookie to tailor ads based on user preferences. Users can opt out via Google's Ad Preferences at [http://www.google.com/ads/preferences/](http://www.google.com/ads/preferences/).
-- **Analytics Tools:** These tools gather details on your browsing patterns, such as page visits, site interactions, and referral sites.
-- **Third-party Web Beacons and Buttons:** We may implement third-party advertising or other content on the Platform that may use clear GIFs or other forms of web beacons, which allow the third-party content provider to read and write Cookies to your web browser in connection with your viewing of the third-party content on the Platform. Additionally, we may implement third-party buttons (such as Facebook “like” or “share” buttons) that may allow a third-party to collect information about you through their browser Cookies, even when you do not interact with the button.
+- **Cookies:** Estos archivos de internet almacenan temporalmente información sobre tu navegación, como las páginas visitadas y las preferencias, para mejorar tu experiencia. **TopNetworks Inc.** y socios de terceros pueden usar cookies para mejorar la personalización. Puedes controlar las cookies en la configuración de tu navegador, but deshabilitarlas puede afectar tu experiencia.
+- **Balizas Web:** Estas técnicas nos permiten identificar y analizar los comportamientos de visita del sitio web en diferentes plataformas y dispositivos.
+- **Cookie DART de Google AdSense:** Podemos mostrar anuncios a través de Google AdSense. Esto utiliza la cookie DART para adaptar los anuncios según las preferencias del usuario. Los usuarios pueden optar por no participar a través de las Preferencias de Anuncios de Google en [http://www.google.com/ads/preferences/](http://www.google.com/ads/preferences/).
+- **Herramientas de Analítica:** Estas herramientas recopilan detalles sobre tus patrones de navegación, como visitas a páginas, interacciones en el sitio y sitios de referencia.
+- **Balizas Web y Botones de Terceros:** Podemos implementar publicidad de terceros u otro contenido en la Plataforma que puede usar GIFs transparentes u otras formas de balizas web, que permiten al proveedor de contenido de terceros leer y escribir Cookies en tu navegador web en relación con tu visualización del contenido de terceros en la Plataforma. Además, podemos implementar botones de terceros (como los botones "me gusta" o "compartir" de Facebook) que pueden permitir a un tercero recopilar información sobre ti a través de las Cookies de su navegador, incluso cuando no interactúas con el botón.
 
-We also engage third-party partners and vendors like Google Analytics, Google Ad Manager and others, who provide analytics and advertising services, to assist us in providing you the Platform. We allow these third-parties, including unaffiliated business partners, advertising networks, analytics providers, and other advertising service providers, to automatically collect Clickstream Data and other information about your online activities on the Platform and across your browsers and devices using cookies, web beacons, mobile advertising identifiers and other technologies. We use this data for our own analytics and advertising purposes, as well as to facilitate partner relationships and your interactions with other third-parties. In addition, certain of our third-party partners may use this information to display online advertisements tailored to your interests and preferences across your browsers and devices, to conduct ad campaign measurement and website analytics, to detect, prevent and report fraud, or to carry out their own business and commercial purposes.
+También contratamos a socios y proveedores de terceros como Google Analytics, Google Ad Manager y otros, que proporcionan servicios de análisis y publicidad, para ayudarnos a proporcionarte la Plataforma. Permitimos que estos terceros, incluyendo socios comerciales no afiliados, redes de publicidad, proveedores de análisis y otros proveedores de servicios de publicidad, recopilen automáticamente Datos de Flujo de Clics y otra información sobre tus actividades en línea en la Plataforma y en tus navegadores y dispositivos utilizando cookies, balizas web, identificadores de publicidad móvil y otras tecnologías. Usamos estos datos para nuestros propios fines de análisis y publicidad, así como para facilitar las relaciones con los socios y tus interacciones con otros terceros. Además, algunos de nuestros socios de terceros pueden usar esta información para mostrar anuncios en línea adaptados a tus intereses y preferencias en tus navegadores y dispositivos, para realizar mediciones de campañas publicitarias y análisis de sitios web, para detectar, prevenir e informar sobre fraudes, o para llevar a cabo sus propios fines comerciales.
 
-Where information collected through web beacons, buttons, and similar technologies is collected directly by third-parties, their collection and use of information is subject to that third-party’s own privacy policies. Additionally, you may opt out of the use of Google Analytics Cookies here: <https://tools.google.com/dlpage/gaoptout>.
+Cuando la información recopilada a través de balizas web, botones y tecnologías similares es recopilada directamente por terceros, su recopilación y uso de la información está sujeta a las propias políticas de privacidad de ese tercero. Además, puedes optar por no participar en el uso de las Cookies de Google Analytics aquí: <https://tools.google.com/dlpage/gaoptout>.
 
-Due to differences between using websites and apps on mobile devices, you may need to take additional steps to opt out on both platforms. Many mobile devices allow you to opt out of interest-based advertising for mobile apps using the settings within the mobile app or your mobile device. For more information, please check your mobile device settings. You also may uninstall our app using the standard uninstall process available on your mobile device or app marketplace. Please note that your opt-out choice will apply only to the browser and device you are using when you opt out.
+Debido a las diferencias entre el uso de sitios web y aplicaciones en dispositivos móviles, es posible que debas tomar medidas adicionales para optar por no participar en ambas plataformas. Muchos dispositivos móviles te permiten optar por no participar en la publicidad basada en intereses para aplicaciones móviles utilizando la configuración dentro de la aplicación móvil o de tu dispositivo móvil. Para obtener más información, consulta la configuración de tu dispositivo móvil. También puedes desinstalar nuestra aplicación utilizando el proceso de desinstalación estándar disponible en tu dispositivo móvil o en el mercado de aplicaciones. Ten en cuenta que tu elección de exclusión se aplicará solo al navegador y al dispositivo que estés utilizando cuando te excluyas.
 
-## 7. Your Rights and Choices
+## 7. Tus Derechos y Opciones
 
-Under applicable US data protection laws, you have several rights regarding your personal information:
+Bajo las leyes de protección de datos aplicables de EE. UU., tienes varios derechos con respecto a tu información personal:
 
-- **Right to Access:** Request access to your personal information
-- **Right to Rectification:** Request that we correct inaccurate information
-- **Right to Erasure:** Request that we delete your information
-- **Right to Restrict Processing:** Request that we restrict the processing of your information
-- **Right to Data Portability:** Request the transfer of your information
-- **Right to Object:** Object to our processing of your information
-- **Right to Withdraw Consent:** Withdraw consent previously given
+- **Derecho de Acceso:** Solicitar acceso a tu información personal.
+- **Derecho de Rectificación:** Solicitar que corrijamos información inexacta.
+- **Derecho de Supresión:** Solicitar que eliminemos tu información.
+- **Derecho a Restringir el Procesamiento:** Solicitar que restrinjamos el procesamiento de tu información.
+- **Derecho a la Portabilidad de los Datos:** Solicitar la transferencia de tu información.
+- **Derecho de Oposición:** Oponerte a nuestro procesamiento de tu información.
+- **Derecho a Retirar el Consentimiento:** Retirar el consentimiento previamente otorgado.
 
-To exercise these rights, please contact us at [info@example.com](mailto:info@example.com).
+Para ejercer estos derechos, por favor contáctanos en [info@mejoresfinanzas.com](mailto:info@mejoresfinanzas.com).
 
-## 8. Data Security
+## 8. Seguridad de los Datos
 
-We implement reasonable security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+Implementamos medidas de seguridad razonables para proteger tu información personal contra el acceso no autorizado, la alteración, la divulgación o la destrucción.
 
-We employ physical, technical, and administrative measures to safeguard your personal information, including:
+Empleamos medidas físicas, técnicas y administrativas para salvaguardar tu información personal, incluyendo:
 
-- **Encryption:** To secure data during transfer and storage.
-- **Access Controls:** To restrict access to authorized personnel only.
-- **Regular Audits and Monitoring:** To maintain and enhance security practices.
+- **Cifrado:** Para asegurar los datos durante la transferencia y el almacenamiento.
+- **Controles de Acceso:** Para restringir el acceso solo al personal autorizado.
+- **Auditorías y Monitoreo Regulares:** Para mantener y mejorar las prácticas de seguridad.
 
-However, no method of transmission over the Internet or electronic storage is 100% secure, so we cannot guarantee absolute security.
+Sin embargo, ningún método de transmisión por Internet o de almacenamiento electrónico es 100% seguro, por lo que no podemos garantizar una seguridad absoluta.
 
-## 9. Retention and Deletion of Personal Data
+## 9. Retención y Eliminación de Datos Personales
 
-We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. When the data is no longer needed, we securely delete or anonymize it.
+Conservamos tu información personal solo durante el tiempo necesario para cumplir con los fines descritos en esta Política de Privacidad o según lo exija la ley. Cuando los datos ya no son necesarios, los eliminamos de forma segura o los anonimizamos.
 
-## 10. User Rights
+## 10. Derechos del Usuario
 
-Depending on your location, you may have certain rights regarding your personal information:
+Dependiendo de tu ubicación, puedes tener ciertos derechos con respecto a tu información personal:
 
-- **Access:** Request a copy of your personal data that we hold.
-- **Correction:** Request correction of any inaccurate or incomplete information.
-- **Deletion:** Request the deletion of your data, subject to certain limitations.
-- **Portability:** Request a copy of your data in a commonly used electronic format.
-- **Withdraw Consent:** Where processing is based on consent, withdraw that consent at any time.
+- **Acceso:** Solicitar una copia de tus datos personales que tenemos.
+- **Corrección:** Solicitar la corrección de cualquier información inexacta o incompleta.
+- **Eliminación:** Solicitar la eliminación de tus datos, sujeto a ciertas limitaciones.
+- **Portabilidad:** Solicitar una copia de tus datos en un formato electrónico de uso común.
+- **Retirar el Consentimiento:** Cuando el procesamiento se basa en el consentimiento, retirar ese consentimiento en cualquier momento.
 
-To exercise these rights, please contact us at [info@example.com](mailto:info@example.com).
+Para ejercer estos derechos, por favor contáctanos en [info@mejoresfinanzas.com](mailto:info@mejoresfinanzas.com).
 
-## 11. Children's Privacy
+## 11. Privacidad de los Niños
 
-Our services are not intended for individuals under 18 years of age. We do not knowingly collect personal information from children. If we become aware that we have collected personal data from a child without parental consent, we take steps to remove that information.
+Nuestros servicios no están destinados a personas menores de 18 años. No recopilamos a sabiendas información personal de niños. Si nos damos cuenta de que hemos recopilado datos personales de un niño sin el consentimiento de los padres, tomamos medidas para eliminar esa información.
 
-## 12. International Data Transfers
+## 12. Transferencias Internacionales de Datos
 
-We are located in Panama with operations in the United States, but our servers and service providers may be located in other countries. By using our services, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection rules. When transferring data internationally, we ensure appropriate safeguards are in place as required by applicable law.
+Estamos ubicados en Panamá con operaciones en los Estados Unidos, pero nuestros servidores y proveedores de servicios pueden estar ubicados en otros países. Al utilizar nuestros servicios, aceptas la transferencia de tu información a países fuera de tu país de residencia, que pueden tener diferentes normas de protección de datos. Al transferir datos internacionalmente, nos aseguramos de que existan las garantías adecuadas según lo exige la ley aplicable.
 
-## 13. Third-Party Links and Services
+## 13. Enlaces y Servicios de Terceros
 
-Our Site may contain links to third-party websites. This Privacy Policy does not apply to third-party sites. We are not responsible for their privacy practices, and we encourage you to read their privacy policies before providing any personal data.
+Nuestro Sitio puede contener enlaces a sitios web de terceros. Esta Política de Privacidad no se aplica a los sitios de terceros. No somos responsables de sus prácticas de privacidad, y te recomendamos que leas sus políticas de privacidad antes de proporcionar cualquier dato personal.
 
-We partner with Google and in [this page](https://policies.google.com/technologies/partner-sites) they explain how Google manages data in its ads products.
+Nos asociamos con Google y en [esta página](https://policies.google.com/technologies/partner-sites) explican cómo Google gestiona los datos en sus productos publicitarios.
 
-## 14. Changes to This Privacy Policy
+## 14. Cambios a Esta Política de Privacidad
 
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. We encourage you to review this Privacy Policy periodically.
+Podemos actualizar nuestra Política de Privacidad de vez en cuando. Te notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página y actualizando la "Fecha de Entrada en Vigor" en la parte superior. Te recomendamos que revises esta Política de Privacidad periódicamente.
 
-## 15. Cookie Policy
+## 15. Política de Cookies
 
-Our website uses cookies and similar technologies to enhance your browsing experience. You can manage cookie preferences through your browser settings. For more information about the cookies we use and how to manage them, please visit our [Cookie Policy page](/cookie-policy).
+Nuestro sitio web utiliza cookies y tecnologías similares para mejorar tu experiencia de navegación. Puedes gestionar las preferencias de las cookies a través de la configuración de tu navegador. Para obtener más información sobre las cookies que utilizamos y cómo gestionarlas, visita nuestra [página de Política de Cookies](/cookie-policy).
 
-## 16. State-Specific Rights
+## 16. Derechos Específicos del Estado
 
-**California Residents:** Under the California Consumer Privacy Act (CCPA), California residents have additional rights regarding their personal information, including the right to know, delete, opt-out of sale, and non-discrimination. To exercise these rights, please contact us at the information below.
+**Residentes de California:** Bajo la Ley de Privacidad del Consumidor de California (CCPA), los residentes de California tienen derechos adicionales con respecto a su información personal, incluyendo el derecho a saber, eliminar, optar por no participar en la venta y a la no discriminación. Para ejercer estos derechos, por favor contáctanos en la información a continuación.
 
-**Other States:** Residents of other states with comprehensive privacy laws may have similar rights. Please contact us to learn more about your specific rights.
+**Otros Estados:** Los residentes de otros estados con leyes de privacidad integrales pueden tener derechos similares. Por favor contáctanos para obtener más información sobre tus derechos específicos.
 
-## 17. Contact Information
+## 17. Información de Contacto
 
-If you have any questions, comments, or requests regarding this Privacy Policy, please contact us at:
+Si tienes alguna pregunta, comentario o solicitud con respecto a esta Política de Privacidad, por favor contáctanos en:
 
 ## TopNetworks Inc
 
-- **Email:** [info@example.com](mailto:info@example.com)
-- **Address:** PANAMA, PANAMA CITY, AV. AQUILINO DE LA GUARDIA, OCEAN BUSINESS PLAZA BUILDING, FLOOR 12
+- **Correo Electrónico:** [info@mejoresfinanzas.com](mailto:info@mejoresfinanzas.com)
+- **Dirección:** PANAMA, PANAMA CITY, AV. AQUILINO DE LA GUARDIA, OCEAN BUSINESS PLAZA BUILDING, FLOOR 12

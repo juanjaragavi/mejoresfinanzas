@@ -80,7 +80,7 @@ Original image URLs are kept to avoid breaking paths; replace them manually as n
 
 - Edit `src/config/brand.ts` to set:
   - name: your brand display name
-  - domain: primary domain (example.com)
+  - domain: primary domain (mejoresfinanzas.com)
   - tagline: short text-only tagline
 - Do not change existing media URLs during initial setup; swap files at the same paths later.
 - Update `src/config/config.json`, `src/config/theme.json`, and styles as needed. Add your logos under `public/images/` using existing filenames to avoid code changes.

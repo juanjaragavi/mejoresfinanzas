@@ -84,16 +84,17 @@ export function AIContentDisclaimer() {
 
           <div className="flex-grow">
             <h4 className="text-lg font-semibold mb-1">
-              AI-Generated Content Disclaimer
+              Descargo de Responsabilidad sobre Contenido Generado por IA
             </h4>
             <p className="text-sm text-left sm:text-left text-gray-600 mb-2">
-              This content was generated using artificial intelligence tools,
-              with extensive information sourced from live online resources. All
-              generated content (text and potentially images) has been curated,
-              reviewed, and corrected by a human author.
+              Este contenido fue generado utilizando herramientas de
+              inteligencia artificial, con amplia información obtenida de
+              recursos en línea en tiempo real. Todo el contenido generado
+              (texto y potencialmente imágenes) ha sido curado, revisado y
+              corregido por un autor humano.
             </p>
             <div className="text-sm flex items-center text-gray-700">
-              <span className="font-medium">Edited by:</span>
+              <span className="font-medium">Editado por:</span>
               <span className="ml-1 font-semibold">{author.name}</span>
             </div>
           </div>
@@ -159,16 +160,17 @@ export function AIContentDisclaimerStatic() {
 
           <div className="flex-grow">
             <h4 className="text-lg font-semibold mb-1">
-              AI-Generated Content Disclaimer
+              Descargo de Responsabilidad sobre Contenido Generado por IA
             </h4>
             <p className="text-sm text-gray-600 mb-2">
-              This content was generated using artificial intelligence tools,
-              with extensive information sourced from live online resources. All
-              generated content (text and potentially images) has been curated,
-              reviewed, and corrected by a human author.
+              Este contenido fue generado utilizando herramientas de
+              inteligencia artificial, con amplia información obtenida de
+              recursos en línea en tiempo real. Todo el contenido generado
+              (texto y potencialmente imágenes) ha sido curado, revisado y
+              corregido por un autor humano.
             </p>
             <div className="text-sm flex items-center text-gray-700">
-              <span className="font-medium">Edited by:</span>
+              <span className="font-medium">Editado por:</span>
               <span className="ml-1 font-semibold">{author.name}</span>
             </div>
           </div>

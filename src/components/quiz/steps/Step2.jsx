@@ -7,12 +7,12 @@ export default function Step2({ formData, updateFormData }) {
   const [selected, setSelected] = useState(formData.income);
 
   const options = [
-    { id: "A", label: "Under $25,000" },
+    { id: "A", label: "Menos de $25,000" },
     { id: "B", label: "$25,000 - $50,000" },
     { id: "C", label: "$50,000 - $75,000" },
     { id: "D", label: "$75,000 - $100,000" },
     { id: "E", label: "$100,000 - $150,000" },
-    { id: "F", label: "Over $150,000" },
+    { id: "F", label: "Más de $150,000" },
   ];
 
   const handleSelect = (id) => {
@@ -25,7 +25,7 @@ export default function Step2({ formData, updateFormData }) {
       <ProgressIndicator step={2} />
       <div className="text-left">
         <h2 className="text-md font-bold text-left text-gray-950">
-          Almost There!
+          ¡Casi listo!
         </h2>
       </div>
 
@@ -35,7 +35,7 @@ export default function Step2({ formData, updateFormData }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        What is your annual household income?
+        ¿Cuál es el ingreso anual de tu hogar?
       </motion.h1>
 
       <motion.div
@@ -59,7 +59,7 @@ export default function Step2({ formData, updateFormData }) {
 
       <div className="mt-10">
         <p className="text-left text-xs text-gray-500">
-          © 2025. Your trusted financial companion.
+          © 2025. Tu compañero financiero de confianza.
         </p>
       </div>
     </div>

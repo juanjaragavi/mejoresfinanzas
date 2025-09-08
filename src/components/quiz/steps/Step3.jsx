@@ -18,7 +18,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
     if (!email) {
       setErrors((prev) => ({
         ...prev,
-        email: "Email address is required",
+        email: "La dirección de correo electrónico es requerida",
       }));
       return false;
     }
@@ -27,7 +27,8 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
     if (!emailRegex.test(email)) {
       setErrors((prev) => ({
         ...prev,
-        email: "Please enter a valid email address",
+        email:
+          "Por favor, introduce una dirección de correo electrónico válida",
       }));
       return false;
     }
@@ -37,7 +38,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
       if (domainPart.split(".").length < 2 || domainPart.endsWith(".")) {
         setErrors((prev) => ({
           ...prev,
-          email: "The email domain appears incomplete",
+          email: "El dominio del correo electrónico parece incompleto",
         }));
         return false;
       }
@@ -51,7 +52,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
     if (!name.trim()) {
       setErrors((prev) => ({
         ...prev,
-        name: "First name is required",
+        name: "El nombre es requerido",
       }));
       return false;
     }
@@ -59,7 +60,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
     if (name.trim().length < 2) {
       setErrors((prev) => ({
         ...prev,
-        name: "First name must be at least 2 characters",
+        name: "El nombre debe tener al menos 2 caracteres",
       }));
       return false;
     }
@@ -99,7 +100,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
     if (!receiveMessages) {
       setErrors((prev) => ({
         ...prev,
-        general: "You must agree to the terms to continue",
+        general: "Debes aceptar los términos para continuar",
       }));
       return false;
     } else {
@@ -121,11 +122,11 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
       <ProgressIndicator step={3} />
       <div className="text-left mb-4">
         <h2 className="text-xl font-bold text-left text-gray-950">
-          Excellent!
+          ¡Excelente!
         </h2>
         <p className="text-xl leading-tight font-bold text-left text-primary">
-          Enter your details and instantly access the credit card that's{" "}
-          <span className="text-[#4A90E2]">perfect for you</span>
+          Ingresa tus datos y accede al instante a la tarjeta de crédito que es{" "}
+          <span className="text-[#4A90E2]">perfecta para ti</span>
         </p>
       </div>
 
@@ -137,7 +138,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
       >
         <div className="space-y-1.5">
           <label htmlFor="email" className="text-sm font-medium">
-            Email
+            Correo Electrónico
           </label>
           <input
             id="email"
@@ -151,7 +152,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
                 ? "border-red-500 focus:ring-red-500"
                 : "border-gray-300 focus:border-primary focus:ring-primary"
             } focus:outline-none focus:ring-2`}
-            placeholder="your@email.com"
+            placeholder="tu@email.com"
             aria-describedby="email-error"
           />
           {errors.email && (
@@ -163,7 +164,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
 
         <div className="space-y-1.5">
           <label htmlFor="name" className="text-sm font-medium">
-            First Name
+            Nombre
           </label>
           <input
             id="name"
@@ -177,7 +178,7 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
                 ? "border-red-500 focus:ring-red-500"
                 : "border-gray-300 focus:border-primary focus:ring-primary"
             } focus:outline-none focus:ring-2`}
-            placeholder="Your first name"
+            placeholder="Tu nombre"
             aria-describedby="name-error"
           />
           {errors.name && (
@@ -196,14 +197,14 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
             className="mt-0.5 h-4 w-4 text-primary border-gray-300 rounded focus:ring-primary"
           />
           <label htmlFor="receiveMessages" className="text-xs">
-            I agree to receive personalized credit card recommendations and
-            accept the{" "}
+            Acepto recibir recomendaciones personalizadas de tarjetas de crédito
+            y acepto los{" "}
             <a href="/terms-conditions" className="underline text-primary">
-              Terms of Service
+              Términos de Servicio
             </a>{" "}
-            and{" "}
+            y la{" "}
             <a href="/privacy-policy" className="underline text-primary">
-              Privacy Policy
+              Política de Privacidad
             </a>
           </label>
         </div>
@@ -231,18 +232,18 @@ export default function Step3({ formData, updateFormData, onSubmit }) {
               : "bg-gray-300 text-gray-500 cursor-not-allowed"
           }`}
         >
-          GET MY RECOMMENDATIONS
+          OBTENER MIS RECOMENDACIONES
         </button>
       </motion.div>
 
       <div className="mt-8">
         <p className="text-left text-sm">
-          <span className="font-bold text-primary">Important:</span> Please
-          ensure your email is correct so we can send you personalized
-          recommendations
+          <span className="font-bold text-primary">Importante:</span> Asegúrate
+          de que tu correo electrónico sea correcto para que podamos enviarte
+          recomendaciones personalizadas
         </p>
         <p className="text-left text-xs mt-2 text-gray-500">
-          © 2025. Your trusted financial companion.
+          © 2025. Tu compañero financiero de confianza.
         </p>
       </div>
     </div>

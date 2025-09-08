@@ -2,8 +2,8 @@
 import { BRAND } from "@/config/brand";
 import Base from "@/layouts/Base.astro";
 import { Image } from "astro:assets";
-const pageTitle = `About ${BRAND.name}`;
-const pageMetaTitle = `About ${BRAND.name}`;
+const pageTitle = `Acerca de ${BRAND.name}`;
+const pageMetaTitle = `Acerca de ${BRAND.name}`;
 const pageDescription = `${BRAND.name} — ${BRAND.tagline}`;
 ---
 
@@ -18,7 +18,7 @@ const pageDescription = `${BRAND.name} — ${BRAND.tagline}`;
     <div class="mb-12">
       <Image
         src="/images/banner-art.webp"
-        alt="Financial Blog Template banner"
+        alt="Banner de la plantilla de blog financiero"
         width={1200}
         height={600}
         class="w-full rounded-xl object-cover shadow-md"
@@ -27,44 +27,49 @@ const pageDescription = `${BRAND.name} — ${BRAND.tagline}`;
 
     <section class="mb-12">
       <p class="text-lg mb-6">
-        At {BRAND.name}, we believe that smart financial decisions shouldn't be
-        complicated, expensive, or biased.
+        En {BRAND.name}, creemos que las decisiones financieras inteligentes no
+        deberían ser complicadas, costosas o sesgadas.
       </p>
 
       <p class="mb-6">
-        We understand that Gen-Z and Millennials face unique financial
-        challenges in today's economy - from student loans and gig work to
-        rising costs and uncertain futures. That's why we've created a space
-        where you can get honest, unbiased financial guidance without the sales
-        pitches or hidden agendas.
+        Entendemos que la Generación Z y los Millennials enfrentan desafíos
+        financieros únicos en la economía actual, desde préstamos estudiantiles
+        y trabajos esporádicos hasta costos crecientes y futuros inciertos. Es
+        por eso que hemos creado un espacio donde puedes obtener orientación
+        financiera honesta e imparcial sin discursos de venta ni agendas
+        ocultas.
       </p>
 
       <p class="mb-6">
-        Our mission is simple: to provide clear, actionable financial advice
-        that empowers you to make confident money decisions, regardless of where
-        you are in your financial journey.
+        Nuestra misión es simple: proporcionar consejos financieros claros y
+        prácticos que te empoderen para tomar decisiones monetarias seguras, sin
+        importar en qué punto de tu viaje financiero te encuentres.
       </p>
 
       <p class="mb-6">
-        What makes us different? We don't earn commissions from credit card
-        companies, and we don't try to sell you products. We're here to give you
-        the real scoop on financial tools and strategies that actually work for
-        people like you.
+        ¿Qué nos hace diferentes? No ganamos comisiones de las compañías de
+        tarjetas de crédito y no intentamos venderte productos. Estamos aquí
+        para darte la información real sobre herramientas y estrategias
+        financieras que realmente funcionan para personas como tú.
       </p>
     </section>
 
     <section class="mb-12">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Our Commitment to You</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">
+        Nuestro Compromiso Contigo
+      </h2>
 
       <ul class="space-y-6">
         <li class="flex gap-4">
           <span class="text-2xl">🎯</span>
           <div>
-            <h3 class="font-semibold text-xl mb-2">100% Unbiased Guidance</h3>
+            <h3 class="font-semibold text-xl mb-2">
+              Orientación 100% Imparcial
+            </h3>
             <p>
-              We don't accept affiliate payments or commissions from financial
-              companies. Our recommendations are based solely on what's best for
-              you, not what pays us the most.
+              No aceptamos pagos de afiliados ni comisiones de compañías
+              financieras. Nuestras recomendaciones se basan únicamente en lo
+              que es mejor para ti, no en lo que nos paga más.
             </p>
           </div>
         </li>
@@ -72,11 +77,11 @@ const pageDescription = `${BRAND.name} — ${BRAND.tagline}`;
         <li class="flex gap-4">
           <span class="text-2xl">🆓</span>
           <div>
-            <h3 class="font-semibold text-xl mb-2">Always Free Access</h3>
+            <h3 class="font-semibold text-xl mb-2">Acceso Siempre Gratuito</h3>
             <p>
-              Quality financial guidance shouldn't cost money. All our content,
-              tools, and resources are completely free - no paywalls, no premium
-              tiers, no catch.
+              La orientación financiera de calidad no debería costar dinero.
+              Todo nuestro contenido, herramientas y recursos son completamente
+              gratuitos, sin muros de pago, sin niveles premium, sin trampas.
             </p>
           </div>
         </li>
@@ -84,11 +89,14 @@ const pageDescription = `${BRAND.name} — ${BRAND.tagline}`;
         <li class="flex gap-4">
           <span class="text-2xl">📱</span>
           <div>
-            <h3 class="font-semibold text-xl mb-2">Modern Money Reality</h3>
+            <h3 class="font-semibold text-xl mb-2">
+              Realidad Monetaria Moderna
+            </h3>
             <p>
-              Our content is tailored for the financial realities of Gen-Z and
-              Millennials - from side hustles and student debt to modern
-              spending habits and digital banking.
+              Nuestro contenido está diseñado para las realidades financieras de
+              la Generación Z y los Millennials, desde trabajos secundarios y
+              deudas estudiantiles hasta hábitos de gasto modernos y banca
+              digital.
             </p>
           </div>
         </li>
@@ -96,41 +104,47 @@ const pageDescription = `${BRAND.name} — ${BRAND.tagline}`;
     </section>
 
     <section class="mb-12">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">What We Cover</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Lo Que Cubrimos</h2>
 
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-light p-6 rounded-lg">
-          <h3 class="font-semibold text-xl mb-3 text-primary">Credit Cards</h3>
+          <h3 class="font-semibold text-xl mb-3 text-primary">
+            Tarjetas de Crédito
+          </h3>
           <p>
-            Honest reviews and comparisons of credit cards without the affiliate
-            bias. We help you find cards that actually match your spending and
-            financial goals.
+            Reseñas y comparaciones honestas de tarjetas de crédito sin el sesgo
+            de afiliados. Te ayudamos a encontrar tarjetas que realmente
+            coincidan con tus gastos y metas financieras.
           </p>
         </div>
 
         <div class="bg-light p-6 rounded-lg">
-          <h3 class="font-semibold text-xl mb-3 text-primary">Budgeting</h3>
+          <h3 class="font-semibold text-xl mb-3 text-primary">Presupuestos</h3>
           <p>
-            Practical budgeting strategies that work with modern lifestyles. No
-            shame, no judgment - just real advice for real people.
+            Estrategias de presupuesto prácticas que funcionan con estilos de
+            vida modernos. Sin vergüenza, sin juicios, solo consejos reales para
+            personas reales.
           </p>
         </div>
 
         <div class="bg-light p-6 rounded-lg">
           <h3 class="font-semibold text-xl mb-3 text-primary">
-            Financial Wellness
+            Bienestar Financiero
           </h3>
           <p>
-            Building emergency funds, understanding investing basics, and
-            planning for major life events - all explained in plain English.
+            Creación de fondos de emergencia, comprensión de los conceptos
+            básicos de inversión y planificación para eventos importantes de la
+            vida, todo explicado en un lenguaje sencillo.
           </p>
         </div>
 
         <div class="bg-light p-6 rounded-lg">
-          <h3 class="font-semibold text-xl mb-3 text-primary">Money Mindset</h3>
+          <h3 class="font-semibold text-xl mb-3 text-primary">
+            Mentalidad Monetaria
+          </h3>
           <p>
-            Addressing the emotional and psychological aspects of money
-            management that traditional finance advice often ignores.
+            Abordar los aspectos emocionales y psicológicos de la gestión del
+            dinero que los consejos financieros tradicionales a menudo ignoran.
           </p>
         </div>
       </div>
@@ -138,45 +152,52 @@ const pageDescription = `${BRAND.name} — ${BRAND.tagline}`;
 
     <section class="mb-12">
       <h2 class="text-2xl md:text-3xl font-bold mb-6">
-        Built by Millennials, for the Next Generation
+        Construido por Millennials, para la Próxima Generación
       </h2>
 
       <p class="mb-6">
-        {BRAND.name} was created by people who understand the unique financial challenges
-        facing younger generations. We've lived through economic uncertainty, dealt
-        with student loans, navigated the gig economy, and experienced the frustration
-        of getting financial advice that doesn't match our reality.
+        {BRAND.name} fue creado por personas que entienden los desafíos financieros
+        únicos que enfrentan las generaciones más jóvenes. Hemos vivido la incertidumbre
+        económica, lidiado con préstamos estudiantiles, navegado la economía de trabajos
+        esporádicos y experimentado la frustración de recibir consejos financieros
+        que no coinciden con nuestra realidad.
       </p>
 
       <p class="mb-6">
-        That's why our content speaks your language and addresses the real
-        financial situations you face - from managing irregular income to making
-        sense of all the credit card offers flooding your mailbox.
+        Es por eso que nuestro contenido habla tu idioma y aborda las
+        situaciones financieras reales que enfrentas, desde la gestión de
+        ingresos irregulares hasta dar sentido a todas las ofertas de tarjetas
+        de crédito que inundan tu buzón.
       </p>
     </section>
 
     <section id="our-promise" class="mb-12 bg-primary/10 p-8 rounded-xl">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Our Promise</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Nuestra Promesa</h2>
 
       <div>
         <p class="text-lg mb-4">
-          We promise to always put your financial well-being first.
+          Prometemos poner siempre tu bienestar financiero en primer lugar.
         </p>
         <p class="mb-4">
-          No hidden agendas, no sales pitches, no complicated jargon - just
-          honest, practical advice to help you build a better financial future.
+          Sin agendas ocultas, sin discursos de venta, sin jerga complicada,
+          solo consejos honestos y prácticos para ayudarte a construir un futuro
+          financiero mejor.
         </p>
-        <p class="font-semibold text-primary">Built by TopNetworks Inc.</p>
+        <p class="font-semibold text-primary">
+          Construido por TopNetworks Inc.
+        </p>
       </div>
     </section>
 
     <section>
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Ready to Get Started?</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">¿Listo para Empezar?</h2>
       <p class="mb-6">
-        Explore our unbiased financial guides and start making smarter money
-        decisions today.
+        Explora nuestras guías financieras imparciales y comienza a tomar
+        decisiones monetarias más inteligentes hoy.
       </p>
-      <a href="/blog" class="btn btn-primary"> Browse Our Financial Guides </a>
+      <a href="/blog" class="btn btn-primary">
+        Explora Nuestras Guías Financieras
+      </a>
     </section>
   </div>
 </Base>

@@ -45,7 +45,7 @@ The Google Search Console reported several indexing errors related to the `/publ
 
 ```robots.txt
 # robots.txt for Financial Blog Template
-# https://example.com/robots.txt
+# https://mejoresfinanzas.com/robots.txt
 # Updated: 2025-07-28
 
 # Universal rules for all crawlers
@@ -84,8 +84,8 @@ User-agent: LinkedInBot
 Allow: /
 
 # Sitemaps
-Sitemap: https://example.com/sitemap-0.xml
-Sitemap: https://example.com/sitemap-0.xml
+Sitemap: https://mejoresfinanzas.com/sitemap-0.xml
+Sitemap: https://mejoresfinanzas.com/sitemap-0.xml
 ```
 
 ### Key Changes Made

@@ -69,7 +69,7 @@ export default function HeroAnimated({
                   src={image}
                   width={750}
                   height={390}
-                  alt="hero image"
+                  alt="imagen del héroe"
                   loading="eager"
                 />
               )}

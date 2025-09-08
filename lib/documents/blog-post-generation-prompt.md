@@ -52,8 +52,8 @@ Based on the input from the user and the topic outline provided in the local `li
 
     - The full context and details for this topic, such as the Tentative Title and Content Focus, are located in the corresponding CSV row within the `lib/documents/topfinanzas-us-topic-outline.csv` file.
       - Before generating the content, review the sitemap for the US site to get an updated list of published pages and articles.
-         - **US Market:** [https://example.com/sitemap-0.xml](https://example.com/sitemap-0.xml)
-      - Use existing published URLs on your configured domain (default https://example.com) when generating internal links.
+         - **US Market:** [https://mejoresfinanzas.com/sitemap-0.xml](https://mejoresfinanzas.com/sitemap-0.xml)
+      - Use existing published URLs on your configured domain (default https://mejoresfinanzas.com) when generating internal links.
     - If the "Funnel Stage" is TOFU, create the new blog post in the `src/pages/personal-finance` category, matching the structure and layout used by existing articles in that directory, but write entirely new, original content.
     ```
 
@@ -77,7 +77,7 @@ Based on the input from the user and the topic outline provided in the local `li
 
 ## Rules for Both Article Types
 
-- Add at least 3 internal links to existing pages on your domain (e.g., <https://example.com>), choosing them according to the context of the text. (`<a>`)
+- Add at least 3 internal links to existing pages on your domain (e.g., <https://mejoresfinanzas.com>), choosing them according to the context of the text. (`<a>`)
 - The language should be clear, accessible, and without unnecessary technical jargon.
 - Use everyday examples when possible and maintain a fluid narrative.
 - Do not use the word 'Conclusion' or 'Summary' in the title of the last paragraph.

@@ -2,9 +2,9 @@ import React from "react";
 
 export default function ProgressIndicator({ step }) {
   const steps = [
-    { number: 1, label: "Preferences" },
-    { number: 2, label: "Income" },
-    { number: 3, label: "Details" },
+    { number: 1, label: "Preferencias" },
+    { number: 2, label: "Ingresos" },
+    { number: 3, label: "Detalles" },
   ];
 
   return (

@@ -118,8 +118,8 @@ Successfully implemented comprehensive `robots.txt` and `llms.txt` files for the
 
 ## File Locations
 
-- **robots.txt**: `https://example.com/robots.txt`
-- **llms.txt**: `https://example.com/llms.txt`
+- **robots.txt**: `https://mejoresfinanzas.com/robots.txt`
+- **llms.txt**: `https://mejoresfinanzas.com/llms.txt`
 - **Local paths**: `/Users/macbookpro/GitHub/mejoresfinanzas/public/`
 
 ## Implementation Date

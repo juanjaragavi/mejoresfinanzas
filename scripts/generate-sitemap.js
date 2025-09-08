@@ -16,30 +16,30 @@ import {
 
 // Mock page data for testing (in real implementation, this would come from Astro)
 const MOCK_PAGES = [
-  "https://example.com/",
-  "https://example.com/about/",
-  "https://example.com/contact/",
-  "https://example.com/blog/",
-  "https://example.com/blog/page/2/",
-  "https://example.com/personal-finance/",
-  "https://example.com/personal-finance/budgeting-methods-compared-which-approach-fits-your-spending-style/",
-  "https://example.com/personal-finance/building-good-money-habits-consistency-is-key/",
-  "https://example.com/personal-finance/page/2/",
-  "https://example.com/financial-solutions/",
-  "https://example.com/financial-solutions/chase-freedom-unlimited-credit-card-benefits/",
-  "https://example.com/financial-solutions/citi-double-cash-credit-card-benefits/",
-  "https://example.com/financial-solutions/page/2/",
-  "https://example.com/quiz/",
-  "https://example.com/quiz-results/",
-  "https://example.com/credit-card-recommender-p1/",
-  "https://example.com/credit-card-recommender-p2/",
-  "https://example.com/credit-card-recommender-p3/",
-  "https://example.com/privacy-policy/",
-  "https://example.com/terms-conditions/",
-  "https://example.com/categories/",
+  "https://mejoresfinanzas.com/",
+  "https://mejoresfinanzas.com/about/",
+  "https://mejoresfinanzas.com/contact/",
+  "https://mejoresfinanzas.com/blog/",
+  "https://mejoresfinanzas.com/blog/page/2/",
+  "https://mejoresfinanzas.com/personal-finance/",
+  "https://mejoresfinanzas.com/personal-finance/budgeting-methods-compared-which-approach-fits-your-spending-style/",
+  "https://mejoresfinanzas.com/personal-finance/building-good-money-habits-consistency-is-key/",
+  "https://mejoresfinanzas.com/personal-finance/page/2/",
+  "https://mejoresfinanzas.com/financial-solutions/",
+  "https://mejoresfinanzas.com/financial-solutions/chase-freedom-unlimited-credit-card-benefits/",
+  "https://mejoresfinanzas.com/financial-solutions/citi-double-cash-credit-card-benefits/",
+  "https://mejoresfinanzas.com/financial-solutions/page/2/",
+  "https://mejoresfinanzas.com/quiz/",
+  "https://mejoresfinanzas.com/quiz-results/",
+  "https://mejoresfinanzas.com/credit-card-recommender-p1/",
+  "https://mejoresfinanzas.com/credit-card-recommender-p2/",
+  "https://mejoresfinanzas.com/credit-card-recommender-p3/",
+  "https://mejoresfinanzas.com/privacy-policy/",
+  "https://mejoresfinanzas.com/terms-conditions/",
+  "https://mejoresfinanzas.com/categories/",
   // Test excluded pages
-  "https://example.com/api/test/",
-  "https://example.com/admin/dashboard/",
+  "https://mejoresfinanzas.com/api/test/",
+  "https://mejoresfinanzas.com/admin/dashboard/",
 ];
 
 /**
@@ -149,7 +149,7 @@ function generateSampleXML(entries) {
             .map(
               (img) => `
     <image:image>
-  <image:loc>https://example.com${img}</image:loc>
+  <image:loc>https://mejoresfinanzas.com${img}</image:loc>
     </image:image>`,
             )
             .join("")
@@ -225,7 +225,7 @@ function main() {
     console.log("\n🎉 Sitemap generation and analysis complete!");
     console.log("\nNext steps:");
     console.log('1. Run "pnpm build" to generate actual sitemap files');
-    console.log("2. Verify sitemap at: https://example.com/sitemap-0.xml");
+    console.log("2. Verify sitemap at: https://mejoresfinanzas.com/sitemap-0.xml");
     console.log("3. Submit to Google Search Console");
   } catch (error) {
     console.error("❌ Error generating sitemap:", error);

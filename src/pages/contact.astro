@@ -25,7 +25,7 @@ const { title, description, info } = entry.data;
                 class="form-input w-full rounded"
                 name="name"
                 type="text"
-                placeholder="Name"
+                placeholder="Nombre"
                 required
               />
             </div>
@@ -34,7 +34,7 @@ const { title, description, info } = entry.data;
                 class="form-input w-full rounded"
                 name="email"
                 type="email"
-                placeholder="Your email"
+                placeholder="Tu correo electrónico"
                 required
               />
             </div>
@@ -43,7 +43,7 @@ const { title, description, info } = entry.data;
                 class="form-input w-full rounded"
                 name="subject"
                 type="text"
-                placeholder="Subject"
+                placeholder="Asunto"
                 required
               />
             </div>
@@ -52,11 +52,11 @@ const { title, description, info } = entry.data;
                 class="form-textarea w-full rounded-md"
                 name="message"
                 rows="7"
-                placeholder="Your message"
+                placeholder="Tu mensaje"
                 required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" id="submit-btn"
-              >Send Now</button
+              >Enviar Ahora</button
             >
             <div id="form-message" class="mt-4 hidden"></div>
           </form>
@@ -101,7 +101,7 @@ const { title, description, info } = entry.data;
 
     // Disable submit button and show loading state
     submitBtn.disabled = true;
-    submitBtn.textContent = "Sending...";
+    submitBtn.textContent = "Enviando...";
     formMessage.classList.add("hidden");
 
     try {
@@ -118,24 +118,24 @@ const { title, description, info } = entry.data;
       if (response.ok) {
         // Success
         formMessage.textContent =
-          "Thank you! Your message has been sent successfully.";
+          "¡Gracias! Tu mensaje ha sido enviado con éxito.";
         formMessage.className = "mt-4 p-4 bg-green-100 text-green-700 rounded";
         form.reset();
       } else {
         // Error
         formMessage.textContent =
-          result.message || "Sorry, there was an error sending your message.";
+          result.message || "Lo sentimos, hubo un error al enviar tu mensaje.";
         formMessage.className = "mt-4 p-4 bg-red-100 text-red-700 rounded";
       }
     } catch (error) {
       // Network error
       formMessage.textContent =
-        "Sorry, there was a network error. Please try again later.";
+        "Lo sentimos, hubo un error de red. Por favor, inténtalo de nuevo más tarde.";
       formMessage.className = "mt-4 p-4 bg-red-100 text-red-700 rounded";
     } finally {
       // Re-enable submit button
       submitBtn.disabled = false;
-      submitBtn.textContent = "Send Now";
+      submitBtn.textContent = "Enviar Ahora";
       formMessage.classList.remove("hidden");
     }
   });
