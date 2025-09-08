@@ -40,7 +40,7 @@ Or download as a ZIP file and extract to your desired location.
 
 ### Development
 
-- Start dev server: pnpm dev (<http://localhost:4321> or <http://localhost:4322>)
+- Start dev server: pnpm dev (<http://localhost:4322>)
 - Build for prod: pnpm build
 - Preview build: pnpm preview
 

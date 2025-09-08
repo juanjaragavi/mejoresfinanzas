@@ -129,7 +129,7 @@ pnpm update               # Update dependencies
 
 #### Project Scripts
 ```bash
-pnpm dev                  # Start dev server (http://localhost:4321)
+pnpm dev                  # Start dev server (http://localhost:4322)
 pnpm build                # Build for production
 pnpm preview              # Preview production build
 pnpm check                # Run Astro checks
@@ -141,7 +141,7 @@ pnpm deploy-project       # Deploy to production
 
 ### Development Server
 
-**Always assume the development server is running** at `http://localhost:4321` unless explicitly stated otherwise.
+**Always assume the development server is running** at `http://localhost:4322` unless explicitly stated otherwise.
 
 ### Git Workflow
 

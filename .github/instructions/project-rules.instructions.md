@@ -101,7 +101,7 @@ The prompt defines brand, description, color palette, typography, desired featur
 
 1. Read `.clinerules/2-PLANNING.md`, `.clinerules/1-RULES.md`, and `.clinerules/5-BRANDING.md`.
 2. Log the task in `.clinerules/3-TASKS.md` with today’s date.
-3. Use pnpm exclusively; assume the dev server at <http://localhost:4321>.
+3. Use pnpm exclusively; assume the dev server at <http://localhost:4322>.
 4. After each iteration, run functional, UI/UX, integration, and performance checks.
 5. Update `src/lib/documents/DOCUMENTATION.md`, `README.md`, and `CHANGELOG.md` for any changes.
 6. Create ADRs in `src/lib/documents/ADRs.md` for major decisions.
@@ -110,7 +110,7 @@ The prompt defines brand, description, color palette, typography, desired featur
 
 ### Development Server Assumption
 
-**Always assume the development server is running** unless explicitly told otherwise. The development server is typically started with `pnpm dev` and runs on `http://localhost:4321` for Astro projects.
+**Always assume the development server is running** unless explicitly told otherwise. The development server is typically started with `pnpm dev` and runs on `http://localhost:4322` for Astro projects.
 
 ### Post-Iteration Testing
 

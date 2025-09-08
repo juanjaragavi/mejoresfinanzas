@@ -22,6 +22,10 @@ export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "https://example.com",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
+  server: {
+    port: 4322,
+    host: true // Allow connections from network (useful for production)
+  },
   vite: { plugins: [tailwindcss()] },
   integrations: [
     react(),

@@ -17,7 +17,7 @@ This project uses **pnpm** — always use pnpm instead of npm/yarn:
 pnpm install          # Install dependencies
 
 # Development
-pnpm dev              # Start dev server at http://localhost:4321
+pnpm dev              # Start dev server at http://localhost:4322
 pnpm build            # Build for production
 pnpm preview          # Preview production build
 
@@ -33,7 +33,7 @@ pnpm deploy-project   # Deploy to production (note: rules doc says 'deploy', scr
 
 ### Development Server
 
-- **Default port**: <http://localhost:4321>
+- **Default port**: <http://localhost:4322>
 - **Always assume the dev server is running** unless told otherwise
 - Hot module replacement enabled for Astro, MDX, and React components
 

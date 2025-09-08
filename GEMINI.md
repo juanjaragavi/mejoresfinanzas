@@ -73,7 +73,7 @@ This project uses **pnpm** as the Node.js package manager. Always use `pnpm` com
 
 ### Development Server Assumption
 
-**Always assume the development server is running** unless explicitly told otherwise. The development server is typically started with `pnpm dev` and runs on `http://localhost:4321` for Astro projects.
+**Always assume the development server is running** unless explicitly told otherwise. The development server is typically started with `pnpm dev` and runs on `http://localhost:4322` for Astro projects.
 
 ### Post-Iteration Testing
 
