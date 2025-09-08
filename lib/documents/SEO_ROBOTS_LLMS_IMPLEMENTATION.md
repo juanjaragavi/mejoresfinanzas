@@ -120,7 +120,7 @@ Successfully implemented comprehensive `robots.txt` and `llms.txt` files for the
 
 - **robots.txt**: `https://example.com/robots.txt`
 - **llms.txt**: `https://example.com/llms.txt`
-- **Local paths**: `/Users/macbookpro/GitHub/financial-blog-template/public/`
+- **Local paths**: `/Users/macbookpro/GitHub/mejoresfinanzas/public/`
 
 ## Implementation Date
 

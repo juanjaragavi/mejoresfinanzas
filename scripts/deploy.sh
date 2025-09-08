@@ -19,7 +19,7 @@ sudo rm -rf .astro
 sudo pnpm build
 
 log "Step 3: Restarting the application with pm2..."
-sudo pm2 restart financial-blog-template
+sudo pm2 restart mejoresfinanzas
 
 log "Step 4: Waiting for the application to restart..."
 sleep 3

@@ -20,9 +20,9 @@ For LLM-based agents initiating a new site from this template, use the local sta
 
 ## Core Documentation
 
-- [README](https://github.com/juanjaragavi/financial-blog-template/blob/main/README.md): Project overview, features, and setup
-- [License](https://github.com/juanjaragavi/financial-blog-template/blob/main/LICENSE): MIT license
-- [Changelog](https://github.com/juanjaragavi/financial-blog-template/blob/main/CHANGELOG.md): Version history and updates
+- [README](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/README.md): Project overview, features, and setup
+- [License](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/LICENSE): MIT license
+- [Changelog](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/CHANGELOG.md): Version history and updates
 
 ## Financial Content
 
@@ -37,20 +37,20 @@ For LLM-based agents initiating a new site from this template, use the local sta
 
 ## Technical Documentation
 
-- [Astro Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/astro.config.mjs): Build and deployment configuration
-- [Package Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/package.json): Dependencies and scripts
-- [TypeScript Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/tsconfig.json): TypeScript compiler settings
+- [Astro Configuration](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/astro.config.mjs): Build and deployment configuration
+- [Package Configuration](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/package.json): Dependencies and scripts
+- [TypeScript Configuration](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/tsconfig.json): TypeScript compiler settings
 
 ## Content Structure
 
-- [Content Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/src/content.config.ts): Content collection schemas and validation
-- [Site Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/src/config/config.json): Site metadata and settings
-- [Menu Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/src/config/menu.json): Navigation structure
-- [Theme Configuration](https://github.com/juanjaragavi/financial-blog-template/blob/main/src/config/theme.json): Design system and styling
+- [Content Configuration](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/src/content.config.ts): Content collection schemas and validation
+- [Site Configuration](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/src/config/config.json): Site metadata and settings
+- [Menu Configuration](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/src/config/menu.json): Navigation structure
+- [Theme Configuration](https://github.com/juanjaragavi/mejoresfinanzas/blob/main/src/config/theme.json): Design system and styling
 
 ## Optional
 
-- [Deployment Scripts](https://github.com/juanjaragavi/financial-blog-template/tree/main/scripts): Automated deployment and workflow scripts
-- [Public Assets](https://github.com/juanjaragavi/financial-blog-template/tree/main/public): Static files, images, and resources
-- [Component Library](https://github.com/juanjaragavi/financial-blog-template/tree/main/src/components): Reusable UI components and layouts
-- [Styling System](https://github.com/juanjaragavi/financial-blog-template/tree/main/src/styles): CSS and design system files
+- [Deployment Scripts](https://github.com/juanjaragavi/mejoresfinanzas/tree/main/scripts): Automated deployment and workflow scripts
+- [Public Assets](https://github.com/juanjaragavi/mejoresfinanzas/tree/main/public): Static files, images, and resources
+- [Component Library](https://github.com/juanjaragavi/mejoresfinanzas/tree/main/src/components): Reusable UI components and layouts
+- [Styling System](https://github.com/juanjaragavi/mejoresfinanzas/tree/main/src/styles): CSS and design system files

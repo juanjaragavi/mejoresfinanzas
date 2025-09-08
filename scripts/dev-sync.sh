@@ -8,7 +8,7 @@ function message() {
 }
 
 # Navigate to the project directory
-cd /Users/macbookpro/GitHub/financial-blog-template || exit
+cd /Users/macbookpro/GitHub/mejoresfinanzas || exit
 
 # Step 1: Stash any local changes
 message "Stashing local changes..."

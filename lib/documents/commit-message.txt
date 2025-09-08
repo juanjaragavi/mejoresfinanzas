@@ -1,5 +1,15 @@
-chore(config,docs): set default port to 4322 and update docs to prevent prod conflict
+chore: rename project references from financial-blog-template to mejoresfinanzas
 
-- astro.config.mjs: server and preview now on 4322 with strictPort
-- docs: updated references from 4321 to 4322 (WARP.md, README.md, rules)
-- note: run pnpm preview on port 4322 in prod or adjust Apache proxy accordingly
+Updated all hardcoded paths, names, and service identifiers after repository rename.
+
+Changes:
+- Update repo path in push/commit procedure docs (.clinerules & .github instructions & GEMINI.md)
+- Rename PM2 app & cwd in ecosystem.config.js and deploy script; adjust dev sync script path
+- Adjust local path references in SEO_ROBOTS_LLMS_IMPLEMENTATION.md
+- Update links and repo references in public/llms.txt
+- Update theme-name meta tag in Base.astro
+- Update Chrome DevTools workspace root JSON
+
+No functional code changes besides metadata/name updates. Build & runtime behavior should remain identical.
+
+Refs: project rename standardization

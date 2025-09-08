@@ -1,10 +1,10 @@
 module.exports = {
   apps: [
     {
-      name: "financial-blog-template",
+      name: "mejoresfinanzas",
       script: "serve",
       args: "dist -s -l 3000",
-      cwd: "/var/www/html/financial-blog-template",
+      cwd: "/var/www/html/mejoresfinanzas",
       instances: 1,
       autorestart: true,
       watch: false,
