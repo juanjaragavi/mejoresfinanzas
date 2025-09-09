@@ -3,8 +3,8 @@ SITE_DESCRIPTION: "MejoresFinanzas is a comprehensive financial wellness blog pl
 PRIMARY_DOMAIN: "https://mejoresfinanzas.com"
 COLOR_PALETTE:
   primary: "#4A90E2"
-  secondary: "#71C96C" # Using green from BudgetBee's successful design
-  accent: "#F59E0B" # Warm amber for CTAs and highlights
+  secondary: "#71C96C"  # Using green from BudgetBee's successful design
+  accent: "#F59E0B"     # Warm amber for CTAs and highlights
   neutral_bg: "#ffffff"
   text: "#111111"
 TYPOGRAPHY:
@@ -28,17 +28,17 @@ FEATURES_TO_ENABLE:
   - rss-feed
   - category-pages
 INTEGRATIONS:
-  google_tag_id: "GTM-MP4CPT97" # Using existing GTM from reference projects
+  google_tag_id: "GTM-MP4CPT97"  # Using existing GTM from reference projects
   convertkit:
     enabled: true
-    form_id: "" # To be configured with actual ConvertKit account
+    form_id: ""  # To be configured with actual ConvertKit account
   mailchimp:
     enabled: false
-    list_id: "" # Alternative to ConvertKit
-  plausible_domain: "" # Optional analytics alternative
+    list_id: ""  # Alternative to ConvertKit
+  plausible_domain: ""  # Optional analytics alternative
   hotjar:
     enabled: false
-    site_id: "" # For heatmap and session recording
+    site_id: ""  # For heatmap and session recording
 CONTENT_CATEGORIES:
   - "Personal Finance"
   - "Financial Solutions"
@@ -48,16 +48,69 @@ CONTENT_CATEGORIES:
   - "Savings & Investing"
   - "Financial Literacy"
   - "Credit Score"
-FUNNEL_STRATEGY: "TOFU/MOFU/BOFU" # Comprehensive funnel coverage
+FUNNEL_STRATEGY: "TOFU/MOFU/BOFU"  # Comprehensive funnel coverage
 SOCIAL_HANDLES:
-  twitter: ""
-  linkedin: ""
-  facebook: ""
-  instagram: ""
-  youtube: ""
+  twitter: "@mejoresfinanzas"
+  linkedin: "mejoresfinanzas"
+  facebook: "mejoresfinanzas"
+  instagram: "@mejoresfinanzas"
+  youtube: "@mejoresfinanzas"
 REPO_URL: "https://github.com/juanjaragavi/mejoresfinanzas"
-PACKAGE_MANAGER: "pnpm" # Required for this template
+PACKAGE_MANAGER: "pnpm"  # Required for this template
 ENVIRONMENT:
   DEV_URL: "http://localhost:4322"
   STAGING_URL: "https://staging.mejoresfinanzas.com"
   PRODUCTION_URL: "https://mejoresfinanzas.com"
+  
+# Additional Configuration from Executive Report
+SEO_CONFIGURATION:
+  primary_keywords:
+    - "best credit cards"
+    - "credit card comparison"
+    - "personal finance"
+    - "budgeting tips"
+    - "financial wellness"
+    - "debt management"
+    - "credit score improvement"
+  meta_description: "Get unbiased financial guidance, compare credit cards, and access free financial tools. MejoresFinanzas helps you make smart money decisions."
+  
+MONETIZATION:
+  affiliate_programs:
+    - "credit-cards"
+    - "banking-products"
+    - "financial-services"
+  advertising:
+    - "google-adsense"
+    - "media-net"
+  sponsored_content: true
+  
+PERFORMANCE_TARGETS:
+  pagespeed_score: 100
+  mobile_responsive: true
+  pwa_enabled: true
+  offline_support: true
+  
+CONTENT_SCHEDULE:
+  posts_per_week: 7
+  email_frequency: "weekly"
+  content_mix:
+    educational: "40%"
+    product_reviews: "30%"
+    guides: "20%"
+    news_updates: "10%"
+    
+LAUNCH_PHASE:
+  phase_1: "English Content (Q1 2025)"
+  phase_2: "Spanish Localization (Q3 2025)"
+  initial_content_goal: "50+ articles at launch"
+  
+USER_PERSONAS:
+  - name: "Sarah the Entrepreneur"
+    age_range: "30-35"
+    focus: "Business credit cards, expense management"
+  - name: "Michael the Young Professional"
+    age_range: "25-30"
+    focus: "Travel rewards, cashback optimization"
+  - name: "Jennifer the Family Manager"
+    age_range: "35-40"
+    focus: "Family budgeting, savings strategies"
